@@ -33,3 +33,10 @@ F:\其它源码\发布源码\DTcms_20_sql_src\DTcms.DBUtility\bin\Debug\DTcms.Co
 F:\其它源码\发布源码\DTcms_20_sql_src\DTcms.DBUtility\obj\Debug\ResolveAssemblyReference.cache
 F:\其它源码\发布源码\DTcms_20_sql_src\DTcms.DBUtility\obj\Debug\DTcms.DBUtility.dll
 F:\其它源码\发布源码\DTcms_20_sql_src\DTcms.DBUtility\obj\Debug\DTcms.DBUtility.pdb
+c:\Documents and Settings\Administrator\My Documents\GitHub\or-dtcms2.0\DTcms.DBUtility\bin\Debug\DTcms.DBUtility.dll
+c:\Documents and Settings\Administrator\My Documents\GitHub\or-dtcms2.0\DTcms.DBUtility\bin\Debug\DTcms.DBUtility.pdb
+c:\Documents and Settings\Administrator\My Documents\GitHub\or-dtcms2.0\DTcms.DBUtility\bin\Debug\DTcms.Common.dll
+c:\Documents and Settings\Administrator\My Documents\GitHub\or-dtcms2.0\DTcms.DBUtility\bin\Debug\DTcms.Common.pdb
+c:\Documents and Settings\Administrator\My Documents\GitHub\or-dtcms2.0\DTcms.DBUtility\obj\Debug\ResolveAssemblyReference.cache
+c:\Documents and Settings\Administrator\My Documents\GitHub\or-dtcms2.0\DTcms.DBUtility\obj\Debug\DTcms.DBUtility.dll
+c:\Documents and Settings\Administrator\My Documents\GitHub\or-dtcms2.0\DTcms.DBUtility\obj\Debug\DTcms.DBUtility.pdb

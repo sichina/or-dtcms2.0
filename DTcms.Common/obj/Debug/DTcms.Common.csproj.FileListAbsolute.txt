@@ -23,3 +23,8 @@ F:\其它源码\发布源码\DTcms_20_sql_src\DTcms.Common\bin\Debug\DTcms.Commo
 F:\其它源码\发布源码\DTcms_20_sql_src\DTcms.Common\obj\Debug\ResolveAssemblyReference.cache
 F:\其它源码\发布源码\DTcms_20_sql_src\DTcms.Common\obj\Debug\DTcms.Common.dll
 F:\其它源码\发布源码\DTcms_20_sql_src\DTcms.Common\obj\Debug\DTcms.Common.pdb
+c:\Documents and Settings\Administrator\My Documents\GitHub\or-dtcms2.0\DTcms.Common\bin\Debug\DTcms.Common.dll
+c:\Documents and Settings\Administrator\My Documents\GitHub\or-dtcms2.0\DTcms.Common\bin\Debug\DTcms.Common.pdb
+c:\Documents and Settings\Administrator\My Documents\GitHub\or-dtcms2.0\DTcms.Common\obj\Debug\ResolveAssemblyReference.cache
+c:\Documents and Settings\Administrator\My Documents\GitHub\or-dtcms2.0\DTcms.Common\obj\Debug\DTcms.Common.dll
+c:\Documents and Settings\Administrator\My Documents\GitHub\or-dtcms2.0\DTcms.Common\obj\Debug\DTcms.Common.pdb

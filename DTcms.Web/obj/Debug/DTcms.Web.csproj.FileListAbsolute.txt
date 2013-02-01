@@ -93,3 +93,22 @@ F:\其它源码\发布源码\DTcms_20_sql_src\DTcms.Web\bin\DTcms.DBUtility.pdb
 F:\其它源码\发布源码\DTcms_20_sql_src\DTcms.Web\obj\Debug\ResolveAssemblyReference.cache
 F:\其它源码\发布源码\DTcms_20_sql_src\DTcms.Web\obj\Debug\DTcms.Web.dll
 F:\其它源码\发布源码\DTcms_20_sql_src\DTcms.Web\obj\Debug\DTcms.Web.pdb
+c:\Documents and Settings\Administrator\My Documents\GitHub\or-dtcms2.0\DTcms.Web\bin\DTcms.Web.dll
+c:\Documents and Settings\Administrator\My Documents\GitHub\or-dtcms2.0\DTcms.Web\bin\DTcms.Web.pdb
+c:\Documents and Settings\Administrator\My Documents\GitHub\or-dtcms2.0\DTcms.Web\bin\DTcms.API.dll
+c:\Documents and Settings\Administrator\My Documents\GitHub\or-dtcms2.0\DTcms.Web\bin\DTcms.BLL.dll
+c:\Documents and Settings\Administrator\My Documents\GitHub\or-dtcms2.0\DTcms.Web\bin\DTcms.Common.dll
+c:\Documents and Settings\Administrator\My Documents\GitHub\or-dtcms2.0\DTcms.Web\bin\DTcms.Model.dll
+c:\Documents and Settings\Administrator\My Documents\GitHub\or-dtcms2.0\DTcms.Web\bin\DTcms.Web.UI.dll
+c:\Documents and Settings\Administrator\My Documents\GitHub\or-dtcms2.0\DTcms.Web\bin\DTcms.DAL.dll
+c:\Documents and Settings\Administrator\My Documents\GitHub\or-dtcms2.0\DTcms.Web\bin\DTcms.DBUtility.dll
+c:\Documents and Settings\Administrator\My Documents\GitHub\or-dtcms2.0\DTcms.Web\bin\DTcms.API.pdb
+c:\Documents and Settings\Administrator\My Documents\GitHub\or-dtcms2.0\DTcms.Web\bin\DTcms.BLL.pdb
+c:\Documents and Settings\Administrator\My Documents\GitHub\or-dtcms2.0\DTcms.Web\bin\DTcms.Common.pdb
+c:\Documents and Settings\Administrator\My Documents\GitHub\or-dtcms2.0\DTcms.Web\bin\DTcms.Model.pdb
+c:\Documents and Settings\Administrator\My Documents\GitHub\or-dtcms2.0\DTcms.Web\bin\DTcms.Web.UI.pdb
+c:\Documents and Settings\Administrator\My Documents\GitHub\or-dtcms2.0\DTcms.Web\bin\DTcms.DAL.pdb
+c:\Documents and Settings\Administrator\My Documents\GitHub\or-dtcms2.0\DTcms.Web\bin\DTcms.DBUtility.pdb
+c:\Documents and Settings\Administrator\My Documents\GitHub\or-dtcms2.0\DTcms.Web\obj\Debug\ResolveAssemblyReference.cache
+c:\Documents and Settings\Administrator\My Documents\GitHub\or-dtcms2.0\DTcms.Web\obj\Debug\DTcms.Web.dll
+c:\Documents and Settings\Administrator\My Documents\GitHub\or-dtcms2.0\DTcms.Web\obj\Debug\DTcms.Web.pdb

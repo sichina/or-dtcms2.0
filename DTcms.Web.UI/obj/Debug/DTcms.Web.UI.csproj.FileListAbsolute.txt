@@ -78,3 +78,19 @@ F:\其它源码\发布源码\DTcms_20_sql_src\DTcms.Web.UI\bin\Debug\DTcms.DBUti
 F:\其它源码\发布源码\DTcms_20_sql_src\DTcms.Web.UI\obj\Debug\ResolveAssemblyReference.cache
 F:\其它源码\发布源码\DTcms_20_sql_src\DTcms.Web.UI\obj\Debug\DTcms.Web.UI.dll
 F:\其它源码\发布源码\DTcms_20_sql_src\DTcms.Web.UI\obj\Debug\DTcms.Web.UI.pdb
+c:\Documents and Settings\Administrator\My Documents\GitHub\or-dtcms2.0\DTcms.Web.UI\bin\Debug\DTcms.Web.UI.dll
+c:\Documents and Settings\Administrator\My Documents\GitHub\or-dtcms2.0\DTcms.Web.UI\bin\Debug\DTcms.Web.UI.pdb
+c:\Documents and Settings\Administrator\My Documents\GitHub\or-dtcms2.0\DTcms.Web.UI\bin\Debug\DTcms.BLL.dll
+c:\Documents and Settings\Administrator\My Documents\GitHub\or-dtcms2.0\DTcms.Web.UI\bin\Debug\DTcms.Common.dll
+c:\Documents and Settings\Administrator\My Documents\GitHub\or-dtcms2.0\DTcms.Web.UI\bin\Debug\DTcms.Model.dll
+c:\Documents and Settings\Administrator\My Documents\GitHub\or-dtcms2.0\DTcms.Web.UI\bin\Debug\LitJSON.dll
+c:\Documents and Settings\Administrator\My Documents\GitHub\or-dtcms2.0\DTcms.Web.UI\bin\Debug\DTcms.DAL.dll
+c:\Documents and Settings\Administrator\My Documents\GitHub\or-dtcms2.0\DTcms.Web.UI\bin\Debug\DTcms.DBUtility.dll
+c:\Documents and Settings\Administrator\My Documents\GitHub\or-dtcms2.0\DTcms.Web.UI\bin\Debug\DTcms.BLL.pdb
+c:\Documents and Settings\Administrator\My Documents\GitHub\or-dtcms2.0\DTcms.Web.UI\bin\Debug\DTcms.Common.pdb
+c:\Documents and Settings\Administrator\My Documents\GitHub\or-dtcms2.0\DTcms.Web.UI\bin\Debug\DTcms.Model.pdb
+c:\Documents and Settings\Administrator\My Documents\GitHub\or-dtcms2.0\DTcms.Web.UI\bin\Debug\DTcms.DAL.pdb
+c:\Documents and Settings\Administrator\My Documents\GitHub\or-dtcms2.0\DTcms.Web.UI\bin\Debug\DTcms.DBUtility.pdb
+c:\Documents and Settings\Administrator\My Documents\GitHub\or-dtcms2.0\DTcms.Web.UI\obj\Debug\ResolveAssemblyReference.cache
+c:\Documents and Settings\Administrator\My Documents\GitHub\or-dtcms2.0\DTcms.Web.UI\obj\Debug\DTcms.Web.UI.dll
+c:\Documents and Settings\Administrator\My Documents\GitHub\or-dtcms2.0\DTcms.Web.UI\obj\Debug\DTcms.Web.UI.pdb

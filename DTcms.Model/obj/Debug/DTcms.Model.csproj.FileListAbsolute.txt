@@ -33,3 +33,10 @@ F:\其它源码\发布源码\DTcms_20_sql_src\DTcms.Model\bin\Debug\DTcms.Common
 F:\其它源码\发布源码\DTcms_20_sql_src\DTcms.Model\obj\Debug\ResolveAssemblyReference.cache
 F:\其它源码\发布源码\DTcms_20_sql_src\DTcms.Model\obj\Debug\DTcms.Model.dll
 F:\其它源码\发布源码\DTcms_20_sql_src\DTcms.Model\obj\Debug\DTcms.Model.pdb
+c:\Documents and Settings\Administrator\My Documents\GitHub\or-dtcms2.0\DTcms.Model\bin\Debug\DTcms.Model.dll
+c:\Documents and Settings\Administrator\My Documents\GitHub\or-dtcms2.0\DTcms.Model\bin\Debug\DTcms.Model.pdb
+c:\Documents and Settings\Administrator\My Documents\GitHub\or-dtcms2.0\DTcms.Model\bin\Debug\DTcms.Common.dll
+c:\Documents and Settings\Administrator\My Documents\GitHub\or-dtcms2.0\DTcms.Model\bin\Debug\DTcms.Common.pdb
+c:\Documents and Settings\Administrator\My Documents\GitHub\or-dtcms2.0\DTcms.Model\obj\Debug\ResolveAssemblyReference.cache
+c:\Documents and Settings\Administrator\My Documents\GitHub\or-dtcms2.0\DTcms.Model\obj\Debug\DTcms.Model.dll
+c:\Documents and Settings\Administrator\My Documents\GitHub\or-dtcms2.0\DTcms.Model\obj\Debug\DTcms.Model.pdb
