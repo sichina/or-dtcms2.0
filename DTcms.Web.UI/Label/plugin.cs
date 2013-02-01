@@ -9,7 +9,7 @@ namespace DTcms.Web.UI
     public partial class BasePage : System.Web.UI.Page
     {
         /// <summary>
-        /// 利用反射调用插件方法
+        /// 利用反射调用业务模块方法
         /// </summary>
         /// <param name="className">类名</param>
         /// <param name="methodName">方法名</param>
@@ -36,7 +36,7 @@ namespace DTcms.Web.UI
             }
             catch
             {
-                //插件方法获取失败
+                //业务模块方法获取失败
             }
             return dt;
         }

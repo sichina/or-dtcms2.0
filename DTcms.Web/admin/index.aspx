@@ -51,7 +51,7 @@
             }
         });
 
-        //加载插件菜单
+        //加载业务模块菜单
         loadPluginsNav();
 
         //快捷菜单
@@ -84,7 +84,7 @@
         }
     }
 
-    //加载插件管理菜单
+    //加载业务模块管理菜单
     function loadPluginsNav() {
         $.ajax({
             type: "POST",
@@ -97,7 +97,7 @@
                 $("#global_plugins").html(data);
             },
             error: function (XMLHttpRequest, textStatus, errorThrown) {
-                $("#global_plugins").html("<div style=\"line-height:30px; text-align:center;\">加载插件菜单出错！</div>");
+                $("#global_plugins").html("<div style=\"line-height:30px; text-align:center;\">加载业务模块菜单出错！</div>");
             }
         });
     }
@@ -247,7 +247,7 @@
             <%} %>
             <%if (IsAdminLevel("sys_plugin", DTEnums.ActionEnum.View.ToString()))
               { %>
-            <div title="插件管理" iconcss="menu-icon-plugins">
+            <div title="业务模块管理" iconcss="menu-icon-plugins">
                 <ul id="global_plugins" class="nlist">
                     <!--
                     <li><a class="l-link" href="javascript:f_addTab('listpage21','广告管理','demos/case/listpage21.htm')">广告管理</a></li>
@@ -275,7 +275,7 @@
                     <li><a class="l-link" href="javascript:f_addTab('sys_channel','系统频道设置','settings/sys_channel_list.aspx')">系统频道设置</a></li>
                     <%} if (IsAdminLevel("sys_plugin", DTEnums.ActionEnum.View.ToString()))
                       { %>
-                    <li><a class="l-link" href="javascript:f_addTab('plugin_list','系统插件管理','settings/plugin_list.aspx')">系统插件管理</a></li>
+                    <li><a class="l-link" href="javascript:f_addTab('plugin_list','系统业务模块管理','settings/plugin_list.aspx')">系统业务模块管理</a></li>
                     <%} if (IsAdminLevel("sys_templet", DTEnums.ActionEnum.View.ToString()))
                       { %>
                     <li><a class="l-link" href="javascript:f_addTab('templet_list','系统模板管理','settings/templet_list.aspx')">系统模板管理</a></li>
@@ -297,7 +297,7 @@
             </div> 
         </div> 
         <div position="bottom" class="footer">
-            <div class="copyright">Copyright &copy; 2009 - 2012. dtcms.net. All Rights Reserved.</div>
+            <div class="copyright">Copyright &copy; 2012 - 2013. <%=siteConfig.webcompany %>. All Rights Reserved.</div>
         </div>
     </div>
 </form>

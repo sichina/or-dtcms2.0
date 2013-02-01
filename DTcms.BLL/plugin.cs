@@ -11,28 +11,28 @@ namespace DTcms.BLL
         public plugin() { }
 
         /// <summary>
-        /// 返回插件列表
+        /// 返回业务模块列表
         /// </summary>
-        /// <param name="dirPath">站点下的插件路径(物理路径)</param>
+        /// <param name="dirPath">站点下的业务模块路径(物理路径)</param>
         public List<Model.plugin> GetList(string dirPath)
         {
             return dal.GetList(dirPath);
         }
 
         /// <summary>
-        /// 返回插件说明信息
+        /// 返回业务模块说明信息
         /// </summary>
-        /// <param name="dirPath">插件目录路径(不包含文件名)</param>
-        /// <returns>插件配置信息</returns>
+        /// <param name="dirPath">业务模块目录路径(不包含文件名)</param>
+        /// <returns>业务模块配置信息</returns>
         public Model.plugin GetInfo(string dirPath)
         {
             return dal.GetInfo(dirPath);
         }
 
         /// <summary>
-        /// 修改插件节点数据
+        /// 修改业务模块节点数据
         /// </summary>
-        /// <param name="dirPath">插件目录路径</param>
+        /// <param name="dirPath">业务模块目录路径</param>
         /// <param name="node">节点</param>
         /// <param name="value">值</param>
         /// <returns></returns>
@@ -42,9 +42,9 @@ namespace DTcms.BLL
         }
 
         /// <summary>
-        /// 执行插件SQL语句
+        /// 执行业务模块SQL语句
         /// </summary>
-        /// <param name="dirPath">插件目录路径</param>
+        /// <param name="dirPath">业务模块目录路径</param>
         /// <param name="xPath">节点</param>
         public bool ExeSqlStr(string dirPath, string xPath)
         {
@@ -54,7 +54,7 @@ namespace DTcms.BLL
         /// <summary>
         /// 添加URL映射节点
         /// </summary>
-        /// <param name="dirPath">插件目录路径</param>
+        /// <param name="dirPath">业务模块目录路径</param>
         /// <param name="xPath">节点</param>
         public bool AppendNodes(string dirPath, string xPath)
         {
@@ -64,7 +64,7 @@ namespace DTcms.BLL
         /// <summary>
         /// 删除URL映射节点
         /// </summary>
-        /// <param name="dirPath">插件目录路径</param>
+        /// <param name="dirPath">业务模块目录路径</param>
         /// <param name="xPath">节点</param>
         public bool RemoveNodes(string dirPath, string xPath)
         {

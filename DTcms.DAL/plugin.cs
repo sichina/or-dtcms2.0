@@ -12,7 +12,7 @@ namespace DTcms.DAL
     public partial class plugin
     {
         /// <summary>
-        /// 返回插件列表
+        /// 返回业务模块列表
         /// </summary>
         public List<Model.plugin> GetList(string dirPath)
         {
@@ -35,7 +35,7 @@ namespace DTcms.DAL
         }
 
         /// <summary>
-        /// 返回插件说明信息
+        /// 返回业务模块说明信息
         /// </summary>
         public Model.plugin GetInfo(string dirPath)
         {
@@ -102,7 +102,7 @@ namespace DTcms.DAL
         }
 
         /// <summary>
-        /// 修改插件节点数据
+        /// 修改业务模块节点数据
         /// </summary>
         public bool UpdateNodeValue(string dirPath, string xPath, string value)
         {
@@ -110,7 +110,7 @@ namespace DTcms.DAL
         }
 
         /// <summary>
-        /// 执行插件SQL语句
+        /// 执行业务模块SQL语句
         /// </summary>
         public bool ExeSqlStr(string dirPath, string xPath)
         {

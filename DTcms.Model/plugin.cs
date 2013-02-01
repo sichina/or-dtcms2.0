@@ -3,7 +3,7 @@
 namespace DTcms.Model
 {
     /// <summary>
-    /// 插件:实体类
+    /// 业务模块:实体类
     /// </summary>
     [Serializable]
     public partial class plugin
@@ -16,7 +16,7 @@ namespace DTcms.Model
         private int _isload;
 
         /// <summary>
-        /// 插件目录
+        /// 业务模块目录
         /// </summary>
         public string directory
         {
@@ -24,7 +24,7 @@ namespace DTcms.Model
             set { _directory = value; }
         }
         /// <summary>
-        /// 插件名称
+        /// 业务模块名称
         /// </summary>
         public string name
         {

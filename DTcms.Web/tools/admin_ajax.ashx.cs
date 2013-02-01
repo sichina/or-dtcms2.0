@@ -27,7 +27,7 @@ namespace DTcms.Web.tools
                 case "sys_channel_load": //加载频道管理菜单
                     sys_channel_load(context);
                     break;
-                case "plugins_nav_load": //加载插件管理菜单
+                case "plugins_nav_load": //加载业务模块管理菜单
                     plugins_nav_load(context);
                     break;
                 case "sys_channel_validate": //验证频道名称是否重复
@@ -91,7 +91,7 @@ namespace DTcms.Web.tools
         }
         #endregion
 
-        #region 加载插件管理菜单================================
+        #region 加载业务模块管理菜单================================
         private void plugins_nav_load(HttpContext context)
         {
             BLL.plugin bll = new BLL.plugin();

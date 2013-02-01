@@ -172,10 +172,10 @@ namespace DTcms.Web.admin.manager
             dt.Rows.Add("sys_channel", DTEnums.ActionEnum.Add.ToString(), "添加频道配置");
             dt.Rows.Add("sys_channel", DTEnums.ActionEnum.Edit.ToString(), "修改频道配置");
             dt.Rows.Add("sys_channel", DTEnums.ActionEnum.Delete.ToString(), "删除频道配置");
-            dt.Rows.Add("sys_plugin", DTEnums.ActionEnum.View.ToString(), "查看系统插件");
-            dt.Rows.Add("sys_plugin", DTEnums.ActionEnum.Add.ToString(), "安装系统插件");
-            dt.Rows.Add("sys_plugin", DTEnums.ActionEnum.Edit.ToString(), "生成插件模板");
-            dt.Rows.Add("sys_plugin", DTEnums.ActionEnum.Delete.ToString(), "卸载系统插件");
+            dt.Rows.Add("sys_plugin", DTEnums.ActionEnum.View.ToString(), "查看系统业务模块");
+            dt.Rows.Add("sys_plugin", DTEnums.ActionEnum.Add.ToString(), "安装系统业务模块");
+            dt.Rows.Add("sys_plugin", DTEnums.ActionEnum.Edit.ToString(), "生成业务模块模板");
+            dt.Rows.Add("sys_plugin", DTEnums.ActionEnum.Delete.ToString(), "卸载系统业务模块");
             dt.Rows.Add("sys_templet", DTEnums.ActionEnum.View.ToString(), "查看系统模板");
             dt.Rows.Add("sys_templet", DTEnums.ActionEnum.Add.ToString(), "启用系统模板");
             dt.Rows.Add("sys_templet", DTEnums.ActionEnum.Edit.ToString(), "生成系统模板");

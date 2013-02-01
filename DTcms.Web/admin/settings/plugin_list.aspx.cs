@@ -20,7 +20,7 @@ namespace DTcms.Web.admin.settings
             }
         }
 
-        #region 插件列表绑定
+        #region 业务模块列表绑定
         private void RptBind()
         {
             List<Model.plugin> lt = new List<Model.plugin>();
@@ -31,12 +31,12 @@ namespace DTcms.Web.admin.settings
         }
         #endregion
 
-        #region 生成插件模板
+        #region 生成业务模块模板
         private void MarkTemplates(string dirName)
         {
             BLL.url_rewrite bll = new BLL.url_rewrite();
             List<Model.url_rewrite> ls = bll.GetList("");
-            //插件目录
+            //业务模块目录
             string pluginPath = Utils.GetMapPath("../../plugins/" + dirName + "/templet/");
             if (!Directory.Exists(pluginPath))
             {
@@ -63,7 +63,7 @@ namespace DTcms.Web.admin.settings
         #region 删除模板文件
         private void RemoveTemplates(string dirName)
         {
-            //插件目录
+            //业务模块目录
             string pluginPath = Utils.GetMapPath("../../plugins/" + dirName + "/" + DTKeys.FILE_PLUGIN_XML_CONFING);
             XmlNodeList xnList = XmlHelper.ReadNodes(pluginPath, "plugin/urls");
             if (xnList.Count > 0)
@@ -86,11 +86,11 @@ namespace DTcms.Web.admin.settings
         #endregion
 
 
-        //安装插件
+        //安装业务模块
         protected void btnInstall_Click(object sender, EventArgs e)
         {
             ChkAdminLevel("sys_plugin", DTEnums.ActionEnum.Add.ToString()); //检查权限
-            //插件目录
+            //业务模块目录
             string pluginPath = Utils.GetMapPath("../../plugins/");
             BLL.plugin bll = new BLL.plugin();
             //查找列表
@@ -132,15 +132,15 @@ namespace DTcms.Web.admin.settings
                     }
                 }
             }
-            JscriptMsg("插件安装成功啦！", "plugin_list.aspx", "Success", "parent.loadPluginsNav");
+            JscriptMsg("业务模块安装成功啦！", "plugin_list.aspx", "Success", "parent.loadPluginsNav");
 
         }
 
-        //卸载插件
+        //卸载业务模块
         protected void btnUninstall_Click(object sender, EventArgs e)
         {
             ChkAdminLevel("sys_plugin", DTEnums.ActionEnum.Delete.ToString()); //检查权限
-            //插件目录
+            //业务模块目录
             string pluginPath = Utils.GetMapPath("../../plugins/");
             BLL.plugin bll = new BLL.plugin();
             //查找列表
@@ -185,7 +185,7 @@ namespace DTcms.Web.admin.settings
                     }
                 }
             }
-            JscriptMsg("插件卸载成功啦！", "plugin_list.aspx", "Success", "parent.loadPluginsNav");
+            JscriptMsg("业务模块卸载成功啦！", "plugin_list.aspx", "Success", "parent.loadPluginsNav");
 
         }
 
@@ -193,7 +193,7 @@ namespace DTcms.Web.admin.settings
         protected void lbtnRemark_Click(object sender, EventArgs e)
         {
             ChkAdminLevel("sys_plugin", DTEnums.ActionEnum.Edit.ToString()); //检查权限
-            //插件目录
+            //业务模块目录
             string pluginPath = Utils.GetMapPath("../../plugins/");
             BLL.plugin bll = new BLL.plugin();
             //查找列表
@@ -212,7 +212,7 @@ namespace DTcms.Web.admin.settings
                     }
                     else
                     {
-                        JscriptMsg("该插件尚未安装！", "plugin_list.aspx", "Error");
+                        JscriptMsg("该业务模块尚未安装！", "plugin_list.aspx", "Error");
                     }
                 }
             }

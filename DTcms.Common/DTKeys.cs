@@ -17,7 +17,7 @@ namespace DTcms.Common
         public const string ASSEMBLY_YEAR = "2012";
         //File======================================================
         /// <summary>
-        /// 插件配制文件名
+        /// 业务模块配制文件名
         /// </summary>
         public const string FILE_PLUGIN_XML_CONFING = "plugin.config";
         /// <summary>
