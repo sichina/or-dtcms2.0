@@ -112,3 +112,22 @@ c:\Documents and Settings\Administrator\My Documents\GitHub\or-dtcms2.0\DTcms.We
 c:\Documents and Settings\Administrator\My Documents\GitHub\or-dtcms2.0\DTcms.Web\obj\Debug\ResolveAssemblyReference.cache
 c:\Documents and Settings\Administrator\My Documents\GitHub\or-dtcms2.0\DTcms.Web\obj\Debug\DTcms.Web.dll
 c:\Documents and Settings\Administrator\My Documents\GitHub\or-dtcms2.0\DTcms.Web\obj\Debug\DTcms.Web.pdb
+D:\Backup\桌面\or-dtcms2.0\DTcms.Web\bin\DTcms.Web.dll
+D:\Backup\桌面\or-dtcms2.0\DTcms.Web\bin\DTcms.Web.pdb
+D:\Backup\桌面\or-dtcms2.0\DTcms.Web\bin\DTcms.API.dll
+D:\Backup\桌面\or-dtcms2.0\DTcms.Web\bin\DTcms.BLL.dll
+D:\Backup\桌面\or-dtcms2.0\DTcms.Web\bin\DTcms.Common.dll
+D:\Backup\桌面\or-dtcms2.0\DTcms.Web\bin\DTcms.Model.dll
+D:\Backup\桌面\or-dtcms2.0\DTcms.Web\bin\DTcms.Web.UI.dll
+D:\Backup\桌面\or-dtcms2.0\DTcms.Web\bin\DTcms.DAL.dll
+D:\Backup\桌面\or-dtcms2.0\DTcms.Web\bin\DTcms.DBUtility.dll
+D:\Backup\桌面\or-dtcms2.0\DTcms.Web\bin\DTcms.API.pdb
+D:\Backup\桌面\or-dtcms2.0\DTcms.Web\bin\DTcms.BLL.pdb
+D:\Backup\桌面\or-dtcms2.0\DTcms.Web\bin\DTcms.Common.pdb
+D:\Backup\桌面\or-dtcms2.0\DTcms.Web\bin\DTcms.Model.pdb
+D:\Backup\桌面\or-dtcms2.0\DTcms.Web\bin\DTcms.Web.UI.pdb
+D:\Backup\桌面\or-dtcms2.0\DTcms.Web\bin\DTcms.DAL.pdb
+D:\Backup\桌面\or-dtcms2.0\DTcms.Web\bin\DTcms.DBUtility.pdb
+D:\Backup\桌面\or-dtcms2.0\DTcms.Web\obj\Debug\ResolveAssemblyReference.cache
+D:\Backup\桌面\or-dtcms2.0\DTcms.Web\obj\Debug\DTcms.Web.dll
+D:\Backup\桌面\or-dtcms2.0\DTcms.Web\obj\Debug\DTcms.Web.pdb

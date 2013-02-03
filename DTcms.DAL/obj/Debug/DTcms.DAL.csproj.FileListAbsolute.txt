@@ -64,3 +64,14 @@ c:\Documents and Settings\Administrator\My Documents\GitHub\or-dtcms2.0\DTcms.DA
 c:\Documents and Settings\Administrator\My Documents\GitHub\or-dtcms2.0\DTcms.DAL\obj\Debug\ResolveAssemblyReference.cache
 c:\Documents and Settings\Administrator\My Documents\GitHub\or-dtcms2.0\DTcms.DAL\obj\Debug\DTcms.DAL.dll
 c:\Documents and Settings\Administrator\My Documents\GitHub\or-dtcms2.0\DTcms.DAL\obj\Debug\DTcms.DAL.pdb
+D:\Backup\桌面\or-dtcms2.0\DTcms.DAL\bin\Debug\DTcms.DAL.dll
+D:\Backup\桌面\or-dtcms2.0\DTcms.DAL\bin\Debug\DTcms.DAL.pdb
+D:\Backup\桌面\or-dtcms2.0\DTcms.DAL\bin\Debug\DTcms.Common.dll
+D:\Backup\桌面\or-dtcms2.0\DTcms.DAL\bin\Debug\DTcms.DBUtility.dll
+D:\Backup\桌面\or-dtcms2.0\DTcms.DAL\bin\Debug\DTcms.Model.dll
+D:\Backup\桌面\or-dtcms2.0\DTcms.DAL\bin\Debug\DTcms.Common.pdb
+D:\Backup\桌面\or-dtcms2.0\DTcms.DAL\bin\Debug\DTcms.DBUtility.pdb
+D:\Backup\桌面\or-dtcms2.0\DTcms.DAL\bin\Debug\DTcms.Model.pdb
+D:\Backup\桌面\or-dtcms2.0\DTcms.DAL\obj\Debug\ResolveAssemblyReference.cache
+D:\Backup\桌面\or-dtcms2.0\DTcms.DAL\obj\Debug\DTcms.DAL.dll
+D:\Backup\桌面\or-dtcms2.0\DTcms.DAL\obj\Debug\DTcms.DAL.pdb

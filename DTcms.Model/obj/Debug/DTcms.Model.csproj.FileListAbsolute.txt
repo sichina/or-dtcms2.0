@@ -40,3 +40,10 @@ c:\Documents and Settings\Administrator\My Documents\GitHub\or-dtcms2.0\DTcms.Mo
 c:\Documents and Settings\Administrator\My Documents\GitHub\or-dtcms2.0\DTcms.Model\obj\Debug\ResolveAssemblyReference.cache
 c:\Documents and Settings\Administrator\My Documents\GitHub\or-dtcms2.0\DTcms.Model\obj\Debug\DTcms.Model.dll
 c:\Documents and Settings\Administrator\My Documents\GitHub\or-dtcms2.0\DTcms.Model\obj\Debug\DTcms.Model.pdb
+D:\Backup\桌面\or-dtcms2.0\DTcms.Model\bin\Debug\DTcms.Model.dll
+D:\Backup\桌面\or-dtcms2.0\DTcms.Model\bin\Debug\DTcms.Model.pdb
+D:\Backup\桌面\or-dtcms2.0\DTcms.Model\bin\Debug\DTcms.Common.dll
+D:\Backup\桌面\or-dtcms2.0\DTcms.Model\bin\Debug\DTcms.Common.pdb
+D:\Backup\桌面\or-dtcms2.0\DTcms.Model\obj\Debug\ResolveAssemblyReference.cache
+D:\Backup\桌面\or-dtcms2.0\DTcms.Model\obj\Debug\DTcms.Model.dll
+D:\Backup\桌面\or-dtcms2.0\DTcms.Model\obj\Debug\DTcms.Model.pdb

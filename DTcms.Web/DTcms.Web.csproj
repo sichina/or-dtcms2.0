@@ -13,6 +13,7 @@
     <RootNamespace>DTcms.Web</RootNamespace>
     <AssemblyName>DTcms.Web</AssemblyName>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -48,82 +49,82 @@
     <Reference Include="System.Web.Mobile" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="admin\article\edit.aspx" />
-    <Content Include="admin\article\list.aspx" />
-    <Content Include="admin\attribute\edit.aspx" />
-    <Content Include="admin\attribute\list.aspx" />
-    <Content Include="admin\category\edit.aspx" />
-    <Content Include="admin\category\list.aspx" />
-    <Content Include="admin\center.aspx" />
-    <Content Include="admin\comment\edit.aspx" />
-    <Content Include="admin\comment\list.aspx" />
-    <Content Include="admin\content\edit.aspx" />
-    <Content Include="admin\content\list.aspx" />
-    <Content Include="admin\download\edit.aspx" />
-    <Content Include="admin\download\list.aspx" />
-    <Content Include="admin\goods\edit.aspx" />
-    <Content Include="admin\goods\list.aspx" />
-    <Content Include="admin\ie6update.html" />
-    <Content Include="admin\images\arrow_left.png" />
-    <Content Include="admin\images\btn_bg.gif" />
-    <Content Include="admin\images\default_user_avatar.gif" />
-    <Content Include="admin\images\folder.gif" />
-    <Content Include="admin\images\folder_open.gif" />
-    <Content Include="admin\images\foot_bg.gif" />
-    <Content Include="admin\images\head_bg.gif" />
-    <Content Include="admin\images\head_bg_line.gif" />
-    <Content Include="admin\images\head_logo.png" />
-    <Content Include="admin\images\home.gif" />
-    <Content Include="admin\images\ico-0.png" />
-    <Content Include="admin\images\ico-0_.png" />
-    <Content Include="admin\images\ico-1.png" />
-    <Content Include="admin\images\ico-1_.png" />
-    <Content Include="admin\images\ico-2.png" />
-    <Content Include="admin\images\ico-2_.png" />
-    <Content Include="admin\images\ico-3.png" />
-    <Content Include="admin\images\ico-3_.png" />
-    <Content Include="admin\images\ico-4.png" />
-    <Content Include="admin\images\ico-4_.png" />
-    <Content Include="admin\images\ico-5.png" />
-    <Content Include="admin\images\ico-5_.png" />
-    <Content Include="admin\images\ico-6.png" />
-    <Content Include="admin\images\ico-show-img.png" />
-    <Content Include="admin\images\ico-show-txt.png" />
-    <Content Include="admin\images\icon_asc.gif" />
-    <Content Include="admin\images\icon_attach.png" />
-    <Content Include="admin\images\icon_audit.gif" />
-    <Content Include="admin\images\icon_channel.png" />
-    <Content Include="admin\images\icon_comment.gif" />
-    <Content Include="admin\images\icon_correct.png" />
-    <Content Include="admin\images\icon_del.gif" />
-    <Content Include="admin\images\icon_del2.gif" />
-    <Content Include="admin\images\icon_desc.gif" />
-    <Content Include="admin\images\icon_disable.png" />
-    <Content Include="admin\images\icon_edit.gif" />
-    <Content Include="admin\images\icon_log.png" />
-    <Content Include="admin\images\icon_manaer.png" />
-    <Content Include="admin\images\icon_mark.png" />
-    <Content Include="admin\images\icon_msg.gif" />
-    <Content Include="admin\images\icon_no.png" />
-    <Content Include="admin\images\icon_plugin.png" />
-    <Content Include="admin\images\icon_setting.png" />
-    <Content Include="admin\images\icon_site.gif" />
-    <Content Include="admin\images\icon_templet.png" />
-    <Content Include="admin\images\icon_user.png" />
-    <Content Include="admin\images\icon_view.gif" />
-    <Content Include="admin\images\ie_update.jpg" />
-    <Content Include="admin\images\li_bg.gif" />
-    <Content Include="admin\images\loading.gif" />
-    <Content Include="admin\images\loading2.gif" />
-    <Content Include="admin\images\login_bg.gif" />
-    <Content Include="admin\images\login_btn_bg.gif" />
-    <Content Include="admin\images\login_logo.png" />
-    <Content Include="admin\images\memeber.gif" />
-    <Content Include="admin\images\menu_icons.gif" />
-    <Content Include="admin\images\msg_icon.gif" />
-    <Content Include="admin\images\nav_icon.gif" />
-    <Content Include="admin\images\noimg.gif" />
-    <Content Include="admin\images\order_speed.gif" />
+    <Content Include="uwill\article\edit.aspx" />
+    <Content Include="uwill\article\list.aspx" />
+    <Content Include="uwill\attribute\edit.aspx" />
+    <Content Include="uwill\attribute\list.aspx" />
+    <Content Include="uwill\category\edit.aspx" />
+    <Content Include="uwill\category\list.aspx" />
+    <Content Include="uwill\center.aspx" />
+    <Content Include="uwill\comment\edit.aspx" />
+    <Content Include="uwill\comment\list.aspx" />
+    <Content Include="uwill\content\edit.aspx" />
+    <Content Include="uwill\content\list.aspx" />
+    <Content Include="uwill\download\edit.aspx" />
+    <Content Include="uwill\download\list.aspx" />
+    <Content Include="uwill\goods\edit.aspx" />
+    <Content Include="uwill\goods\list.aspx" />
+    <Content Include="uwill\ie6update.html" />
+    <Content Include="uwill\images\arrow_left.png" />
+    <Content Include="uwill\images\btn_bg.gif" />
+    <Content Include="uwill\images\default_user_avatar.gif" />
+    <Content Include="uwill\images\folder.gif" />
+    <Content Include="uwill\images\folder_open.gif" />
+    <Content Include="uwill\images\foot_bg.gif" />
+    <Content Include="uwill\images\head_bg.gif" />
+    <Content Include="uwill\images\head_bg_line.gif" />
+    <Content Include="uwill\images\head_logo.png" />
+    <Content Include="uwill\images\home.gif" />
+    <Content Include="uwill\images\ico-0.png" />
+    <Content Include="uwill\images\ico-0_.png" />
+    <Content Include="uwill\images\ico-1.png" />
+    <Content Include="uwill\images\ico-1_.png" />
+    <Content Include="uwill\images\ico-2.png" />
+    <Content Include="uwill\images\ico-2_.png" />
+    <Content Include="uwill\images\ico-3.png" />
+    <Content Include="uwill\images\ico-3_.png" />
+    <Content Include="uwill\images\ico-4.png" />
+    <Content Include="uwill\images\ico-4_.png" />
+    <Content Include="uwill\images\ico-5.png" />
+    <Content Include="uwill\images\ico-5_.png" />
+    <Content Include="uwill\images\ico-6.png" />
+    <Content Include="uwill\images\ico-show-img.png" />
+    <Content Include="uwill\images\ico-show-txt.png" />
+    <Content Include="uwill\images\icon_asc.gif" />
+    <Content Include="uwill\images\icon_attach.png" />
+    <Content Include="uwill\images\icon_audit.gif" />
+    <Content Include="uwill\images\icon_channel.png" />
+    <Content Include="uwill\images\icon_comment.gif" />
+    <Content Include="uwill\images\icon_correct.png" />
+    <Content Include="uwill\images\icon_del.gif" />
+    <Content Include="uwill\images\icon_del2.gif" />
+    <Content Include="uwill\images\icon_desc.gif" />
+    <Content Include="uwill\images\icon_disable.png" />
+    <Content Include="uwill\images\icon_edit.gif" />
+    <Content Include="uwill\images\icon_log.png" />
+    <Content Include="uwill\images\icon_manaer.png" />
+    <Content Include="uwill\images\icon_mark.png" />
+    <Content Include="uwill\images\icon_msg.gif" />
+    <Content Include="uwill\images\icon_no.png" />
+    <Content Include="uwill\images\icon_plugin.png" />
+    <Content Include="uwill\images\icon_setting.png" />
+    <Content Include="uwill\images\icon_site.gif" />
+    <Content Include="uwill\images\icon_templet.png" />
+    <Content Include="uwill\images\icon_user.png" />
+    <Content Include="uwill\images\icon_view.gif" />
+    <Content Include="uwill\images\ie_update.jpg" />
+    <Content Include="uwill\images\li_bg.gif" />
+    <Content Include="uwill\images\loading.gif" />
+    <Content Include="uwill\images\loading2.gif" />
+    <Content Include="uwill\images\login_bg.gif" />
+    <Content Include="uwill\images\login_btn_bg.gif" />
+    <Content Include="uwill\images\login_logo.png" />
+    <Content Include="uwill\images\memeber.gif" />
+    <Content Include="uwill\images\menu_icons.gif" />
+    <Content Include="uwill\images\msg_icon.gif" />
+    <Content Include="uwill\images\nav_icon.gif" />
+    <Content Include="uwill\images\noimg.gif" />
+    <Content Include="uwill\images\order_speed.gif" />
     <Content Include="api\balance\index.aspx" />
     <Content Include="css\Jcrop.gif" />
     <Content Include="css\jquery.Jcrop.css" />
@@ -135,52 +136,52 @@
     <Content Include="images\pay_alipay.gif" />
     <Content Include="images\pay_balance.gif" />
     <Content Include="images\pay_tenpay.gif" />
-    <Content Include="admin\images\style.css" />
-    <Content Include="admin\images\t.gif" />
-    <Content Include="admin\images\tools_bg.gif" />
-    <Content Include="admin\images\tools_btn_bg.gif" />
-    <Content Include="admin\images\tools_icon.gif" />
-    <Content Include="admin\images\upbtn_bg.gif" />
-    <Content Include="admin\images\upfile_bg.gif" />
-    <Content Include="admin\images\user_toolbar.gif" />
-    <Content Include="admin\index.aspx" />
-    <Content Include="admin\js\function.js" />
-    <Content Include="admin\login.aspx" />
-    <Content Include="admin\manager\manager_edit.aspx" />
-    <Content Include="admin\manager\manager_list.aspx" />
-    <Content Include="admin\manager\manager_log.aspx" />
-    <Content Include="admin\manager\manager_pwd.aspx" />
-    <Content Include="admin\manager\role_edit.aspx" />
-    <Content Include="admin\manager\role_list.aspx" />
-    <Content Include="admin\orders\distribution_edit.aspx" />
-    <Content Include="admin\orders\distribution_list.aspx" />
-    <Content Include="admin\orders\order_edit.aspx" />
-    <Content Include="admin\orders\order_list.aspx" />
-    <Content Include="admin\orders\order_print.aspx" />
-    <Content Include="admin\orders\payment_edit.aspx" />
-    <Content Include="admin\orders\payment_list.aspx" />
-    <Content Include="admin\settings\plugin_list.aspx" />
-    <Content Include="admin\settings\sys_channel_edit.aspx" />
-    <Content Include="admin\settings\sys_channel_list.aspx" />
-    <Content Include="admin\settings\sys_config.aspx" />
-    <Content Include="admin\settings\sys_model_edit.aspx" />
-    <Content Include="admin\settings\sys_model_list.aspx" />
-    <Content Include="admin\settings\templet_file_edit.aspx" />
-    <Content Include="admin\settings\templet_file_list.aspx" />
-    <Content Include="admin\settings\templet_list.aspx" />
-    <Content Include="admin\settings\url_rewrite_edit.aspx" />
-    <Content Include="admin\settings\url_rewrite_list.aspx" />
-    <Content Include="admin\users\amount_log.aspx" />
-    <Content Include="admin\users\group_edit.aspx" />
-    <Content Include="admin\users\group_list.aspx" />
-    <Content Include="admin\users\mail_template_edit.aspx" />
-    <Content Include="admin\users\mail_template_list.aspx" />
-    <Content Include="admin\users\message_send.aspx" />
-    <Content Include="admin\users\message_list.aspx" />
-    <Content Include="admin\users\point_log.aspx" />
-    <Content Include="admin\users\user_config.aspx" />
-    <Content Include="admin\users\user_edit.aspx" />
-    <Content Include="admin\users\user_list.aspx" />
+    <Content Include="uwill\images\style.css" />
+    <Content Include="uwill\images\t.gif" />
+    <Content Include="uwill\images\tools_bg.gif" />
+    <Content Include="uwill\images\tools_btn_bg.gif" />
+    <Content Include="uwill\images\tools_icon.gif" />
+    <Content Include="uwill\images\upbtn_bg.gif" />
+    <Content Include="uwill\images\upfile_bg.gif" />
+    <Content Include="uwill\images\user_toolbar.gif" />
+    <Content Include="uwill\index.aspx" />
+    <Content Include="uwill\js\function.js" />
+    <Content Include="uwill\login.aspx" />
+    <Content Include="uwill\manager\manager_edit.aspx" />
+    <Content Include="uwill\manager\manager_list.aspx" />
+    <Content Include="uwill\manager\manager_log.aspx" />
+    <Content Include="uwill\manager\manager_pwd.aspx" />
+    <Content Include="uwill\manager\role_edit.aspx" />
+    <Content Include="uwill\manager\role_list.aspx" />
+    <Content Include="uwill\orders\distribution_edit.aspx" />
+    <Content Include="uwill\orders\distribution_list.aspx" />
+    <Content Include="uwill\orders\order_edit.aspx" />
+    <Content Include="uwill\orders\order_list.aspx" />
+    <Content Include="uwill\orders\order_print.aspx" />
+    <Content Include="uwill\orders\payment_edit.aspx" />
+    <Content Include="uwill\orders\payment_list.aspx" />
+    <Content Include="uwill\settings\plugin_list.aspx" />
+    <Content Include="uwill\settings\sys_channel_edit.aspx" />
+    <Content Include="uwill\settings\sys_channel_list.aspx" />
+    <Content Include="uwill\settings\sys_config.aspx" />
+    <Content Include="uwill\settings\sys_model_edit.aspx" />
+    <Content Include="uwill\settings\sys_model_list.aspx" />
+    <Content Include="uwill\settings\templet_file_edit.aspx" />
+    <Content Include="uwill\settings\templet_file_list.aspx" />
+    <Content Include="uwill\settings\templet_list.aspx" />
+    <Content Include="uwill\settings\url_rewrite_edit.aspx" />
+    <Content Include="uwill\settings\url_rewrite_list.aspx" />
+    <Content Include="uwill\users\amount_log.aspx" />
+    <Content Include="uwill\users\group_edit.aspx" />
+    <Content Include="uwill\users\group_list.aspx" />
+    <Content Include="uwill\users\mail_template_edit.aspx" />
+    <Content Include="uwill\users\mail_template_list.aspx" />
+    <Content Include="uwill\users\message_send.aspx" />
+    <Content Include="uwill\users\message_list.aspx" />
+    <Content Include="uwill\users\point_log.aspx" />
+    <Content Include="uwill\users\user_config.aspx" />
+    <Content Include="uwill\users\user_edit.aspx" />
+    <Content Include="uwill\users\user_list.aspx" />
     <Content Include="api\alipay\index.aspx" />
     <Content Include="api\alipay\notify_url.aspx" />
     <Content Include="api\alipay\return_url.aspx" />
@@ -623,368 +624,368 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="admin\article\edit.aspx.cs">
+    <Compile Include="uwill\article\edit.aspx.cs">
       <DependentUpon>edit.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\article\edit.aspx.designer.cs">
+    <Compile Include="uwill\article\edit.aspx.designer.cs">
       <DependentUpon>edit.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin\article\list.aspx.cs">
+    <Compile Include="uwill\article\list.aspx.cs">
       <DependentUpon>list.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\article\list.aspx.designer.cs">
+    <Compile Include="uwill\article\list.aspx.designer.cs">
       <DependentUpon>list.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin\attribute\edit.aspx.cs">
+    <Compile Include="uwill\attribute\edit.aspx.cs">
       <DependentUpon>edit.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\attribute\edit.aspx.designer.cs">
+    <Compile Include="uwill\attribute\edit.aspx.designer.cs">
       <DependentUpon>edit.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin\attribute\list.aspx.cs">
+    <Compile Include="uwill\attribute\list.aspx.cs">
       <DependentUpon>list.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\attribute\list.aspx.designer.cs">
+    <Compile Include="uwill\attribute\list.aspx.designer.cs">
       <DependentUpon>list.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin\category\edit.aspx.cs">
+    <Compile Include="uwill\category\edit.aspx.cs">
       <DependentUpon>edit.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\category\edit.aspx.designer.cs">
+    <Compile Include="uwill\category\edit.aspx.designer.cs">
       <DependentUpon>edit.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin\category\list.aspx.cs">
+    <Compile Include="uwill\category\list.aspx.cs">
       <DependentUpon>list.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\category\list.aspx.designer.cs">
+    <Compile Include="uwill\category\list.aspx.designer.cs">
       <DependentUpon>list.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin\center.aspx.cs">
+    <Compile Include="uwill\center.aspx.cs">
       <DependentUpon>center.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\center.aspx.designer.cs">
+    <Compile Include="uwill\center.aspx.designer.cs">
       <DependentUpon>center.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin\comment\edit.aspx.cs">
+    <Compile Include="uwill\comment\edit.aspx.cs">
       <DependentUpon>edit.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\comment\edit.aspx.designer.cs">
+    <Compile Include="uwill\comment\edit.aspx.designer.cs">
       <DependentUpon>edit.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin\comment\list.aspx.cs">
+    <Compile Include="uwill\comment\list.aspx.cs">
       <DependentUpon>list.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\comment\list.aspx.designer.cs">
+    <Compile Include="uwill\comment\list.aspx.designer.cs">
       <DependentUpon>list.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin\content\edit.aspx.cs">
+    <Compile Include="uwill\content\edit.aspx.cs">
       <DependentUpon>edit.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\content\edit.aspx.designer.cs">
+    <Compile Include="uwill\content\edit.aspx.designer.cs">
       <DependentUpon>edit.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin\content\list.aspx.cs">
+    <Compile Include="uwill\content\list.aspx.cs">
       <DependentUpon>list.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\content\list.aspx.designer.cs">
+    <Compile Include="uwill\content\list.aspx.designer.cs">
       <DependentUpon>list.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin\download\edit.aspx.cs">
+    <Compile Include="uwill\download\edit.aspx.cs">
       <DependentUpon>edit.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\download\edit.aspx.designer.cs">
+    <Compile Include="uwill\download\edit.aspx.designer.cs">
       <DependentUpon>edit.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin\download\list.aspx.cs">
+    <Compile Include="uwill\download\list.aspx.cs">
       <DependentUpon>list.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\download\list.aspx.designer.cs">
+    <Compile Include="uwill\download\list.aspx.designer.cs">
       <DependentUpon>list.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin\goods\edit.aspx.cs">
+    <Compile Include="uwill\goods\edit.aspx.cs">
       <DependentUpon>edit.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\goods\edit.aspx.designer.cs">
+    <Compile Include="uwill\goods\edit.aspx.designer.cs">
       <DependentUpon>edit.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin\goods\list.aspx.cs">
+    <Compile Include="uwill\goods\list.aspx.cs">
       <DependentUpon>list.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\goods\list.aspx.designer.cs">
+    <Compile Include="uwill\goods\list.aspx.designer.cs">
       <DependentUpon>list.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin\index.aspx.cs">
+    <Compile Include="uwill\index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\index.aspx.designer.cs">
+    <Compile Include="uwill\index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin\login.aspx.cs">
+    <Compile Include="uwill\login.aspx.cs">
       <DependentUpon>login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\login.aspx.designer.cs">
+    <Compile Include="uwill\login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin\manager\manager_edit.aspx.cs">
+    <Compile Include="uwill\manager\manager_edit.aspx.cs">
       <DependentUpon>manager_edit.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\manager\manager_edit.aspx.designer.cs">
+    <Compile Include="uwill\manager\manager_edit.aspx.designer.cs">
       <DependentUpon>manager_edit.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin\manager\manager_list.aspx.cs">
+    <Compile Include="uwill\manager\manager_list.aspx.cs">
       <DependentUpon>manager_list.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\manager\manager_list.aspx.designer.cs">
+    <Compile Include="uwill\manager\manager_list.aspx.designer.cs">
       <DependentUpon>manager_list.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin\manager\manager_log.aspx.cs">
+    <Compile Include="uwill\manager\manager_log.aspx.cs">
       <DependentUpon>manager_log.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\manager\manager_log.aspx.designer.cs">
+    <Compile Include="uwill\manager\manager_log.aspx.designer.cs">
       <DependentUpon>manager_log.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin\manager\manager_pwd.aspx.cs">
+    <Compile Include="uwill\manager\manager_pwd.aspx.cs">
       <DependentUpon>manager_pwd.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\manager\manager_pwd.aspx.designer.cs">
+    <Compile Include="uwill\manager\manager_pwd.aspx.designer.cs">
       <DependentUpon>manager_pwd.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin\manager\role_edit.aspx.cs">
+    <Compile Include="uwill\manager\role_edit.aspx.cs">
       <DependentUpon>role_edit.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\manager\role_edit.aspx.designer.cs">
+    <Compile Include="uwill\manager\role_edit.aspx.designer.cs">
       <DependentUpon>role_edit.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin\manager\role_list.aspx.cs">
+    <Compile Include="uwill\manager\role_list.aspx.cs">
       <DependentUpon>role_list.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\manager\role_list.aspx.designer.cs">
+    <Compile Include="uwill\manager\role_list.aspx.designer.cs">
       <DependentUpon>role_list.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin\orders\distribution_edit.aspx.cs">
+    <Compile Include="uwill\orders\distribution_edit.aspx.cs">
       <DependentUpon>distribution_edit.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\orders\distribution_edit.aspx.designer.cs">
+    <Compile Include="uwill\orders\distribution_edit.aspx.designer.cs">
       <DependentUpon>distribution_edit.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin\orders\distribution_list.aspx.cs">
+    <Compile Include="uwill\orders\distribution_list.aspx.cs">
       <DependentUpon>distribution_list.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\orders\distribution_list.aspx.designer.cs">
+    <Compile Include="uwill\orders\distribution_list.aspx.designer.cs">
       <DependentUpon>distribution_list.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin\orders\order_edit.aspx.cs">
+    <Compile Include="uwill\orders\order_edit.aspx.cs">
       <DependentUpon>order_edit.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\orders\order_edit.aspx.designer.cs">
+    <Compile Include="uwill\orders\order_edit.aspx.designer.cs">
       <DependentUpon>order_edit.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin\orders\order_list.aspx.cs">
+    <Compile Include="uwill\orders\order_list.aspx.cs">
       <DependentUpon>order_list.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\orders\order_list.aspx.designer.cs">
+    <Compile Include="uwill\orders\order_list.aspx.designer.cs">
       <DependentUpon>order_list.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin\orders\order_print.aspx.cs">
+    <Compile Include="uwill\orders\order_print.aspx.cs">
       <DependentUpon>order_print.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\orders\order_print.aspx.designer.cs">
+    <Compile Include="uwill\orders\order_print.aspx.designer.cs">
       <DependentUpon>order_print.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin\orders\payment_edit.aspx.cs">
+    <Compile Include="uwill\orders\payment_edit.aspx.cs">
       <DependentUpon>payment_edit.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\orders\payment_edit.aspx.designer.cs">
+    <Compile Include="uwill\orders\payment_edit.aspx.designer.cs">
       <DependentUpon>payment_edit.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin\orders\payment_list.aspx.cs">
+    <Compile Include="uwill\orders\payment_list.aspx.cs">
       <DependentUpon>payment_list.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\orders\payment_list.aspx.designer.cs">
+    <Compile Include="uwill\orders\payment_list.aspx.designer.cs">
       <DependentUpon>payment_list.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin\settings\plugin_list.aspx.cs">
+    <Compile Include="uwill\settings\plugin_list.aspx.cs">
       <DependentUpon>plugin_list.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\settings\plugin_list.aspx.designer.cs">
+    <Compile Include="uwill\settings\plugin_list.aspx.designer.cs">
       <DependentUpon>plugin_list.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin\settings\sys_channel_edit.aspx.cs">
+    <Compile Include="uwill\settings\sys_channel_edit.aspx.cs">
       <DependentUpon>sys_channel_edit.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\settings\sys_channel_edit.aspx.designer.cs">
+    <Compile Include="uwill\settings\sys_channel_edit.aspx.designer.cs">
       <DependentUpon>sys_channel_edit.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin\settings\sys_channel_list.aspx.cs">
+    <Compile Include="uwill\settings\sys_channel_list.aspx.cs">
       <DependentUpon>sys_channel_list.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\settings\sys_channel_list.aspx.designer.cs">
+    <Compile Include="uwill\settings\sys_channel_list.aspx.designer.cs">
       <DependentUpon>sys_channel_list.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin\settings\sys_config.aspx.cs">
+    <Compile Include="uwill\settings\sys_config.aspx.cs">
       <DependentUpon>sys_config.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\settings\sys_config.aspx.designer.cs">
+    <Compile Include="uwill\settings\sys_config.aspx.designer.cs">
       <DependentUpon>sys_config.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin\settings\sys_model_edit.aspx.cs">
+    <Compile Include="uwill\settings\sys_model_edit.aspx.cs">
       <DependentUpon>sys_model_edit.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\settings\sys_model_edit.aspx.designer.cs">
+    <Compile Include="uwill\settings\sys_model_edit.aspx.designer.cs">
       <DependentUpon>sys_model_edit.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin\settings\sys_model_list.aspx.cs">
+    <Compile Include="uwill\settings\sys_model_list.aspx.cs">
       <DependentUpon>sys_model_list.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\settings\sys_model_list.aspx.designer.cs">
+    <Compile Include="uwill\settings\sys_model_list.aspx.designer.cs">
       <DependentUpon>sys_model_list.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin\settings\templet_file_edit.aspx.cs">
+    <Compile Include="uwill\settings\templet_file_edit.aspx.cs">
       <DependentUpon>templet_file_edit.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\settings\templet_file_edit.aspx.designer.cs">
+    <Compile Include="uwill\settings\templet_file_edit.aspx.designer.cs">
       <DependentUpon>templet_file_edit.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin\settings\templet_file_list.aspx.cs">
+    <Compile Include="uwill\settings\templet_file_list.aspx.cs">
       <DependentUpon>templet_file_list.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\settings\templet_file_list.aspx.designer.cs">
+    <Compile Include="uwill\settings\templet_file_list.aspx.designer.cs">
       <DependentUpon>templet_file_list.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin\settings\templet_list.aspx.cs">
+    <Compile Include="uwill\settings\templet_list.aspx.cs">
       <DependentUpon>templet_list.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\settings\templet_list.aspx.designer.cs">
+    <Compile Include="uwill\settings\templet_list.aspx.designer.cs">
       <DependentUpon>templet_list.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin\settings\url_rewrite_edit.aspx.cs">
+    <Compile Include="uwill\settings\url_rewrite_edit.aspx.cs">
       <DependentUpon>url_rewrite_edit.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\settings\url_rewrite_edit.aspx.designer.cs">
+    <Compile Include="uwill\settings\url_rewrite_edit.aspx.designer.cs">
       <DependentUpon>url_rewrite_edit.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin\settings\url_rewrite_list.aspx.cs">
+    <Compile Include="uwill\settings\url_rewrite_list.aspx.cs">
       <DependentUpon>url_rewrite_list.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\settings\url_rewrite_list.aspx.designer.cs">
+    <Compile Include="uwill\settings\url_rewrite_list.aspx.designer.cs">
       <DependentUpon>url_rewrite_list.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin\users\amount_log.aspx.cs">
+    <Compile Include="uwill\users\amount_log.aspx.cs">
       <DependentUpon>amount_log.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\users\amount_log.aspx.designer.cs">
+    <Compile Include="uwill\users\amount_log.aspx.designer.cs">
       <DependentUpon>amount_log.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin\users\group_edit.aspx.cs">
+    <Compile Include="uwill\users\group_edit.aspx.cs">
       <DependentUpon>group_edit.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\users\group_edit.aspx.designer.cs">
+    <Compile Include="uwill\users\group_edit.aspx.designer.cs">
       <DependentUpon>group_edit.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin\users\group_list.aspx.cs">
+    <Compile Include="uwill\users\group_list.aspx.cs">
       <DependentUpon>group_list.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\users\group_list.aspx.designer.cs">
+    <Compile Include="uwill\users\group_list.aspx.designer.cs">
       <DependentUpon>group_list.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin\users\mail_template_edit.aspx.cs">
+    <Compile Include="uwill\users\mail_template_edit.aspx.cs">
       <DependentUpon>mail_template_edit.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\users\mail_template_edit.aspx.designer.cs">
+    <Compile Include="uwill\users\mail_template_edit.aspx.designer.cs">
       <DependentUpon>mail_template_edit.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin\users\mail_template_list.aspx.cs">
+    <Compile Include="uwill\users\mail_template_list.aspx.cs">
       <DependentUpon>mail_template_list.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\users\mail_template_list.aspx.designer.cs">
+    <Compile Include="uwill\users\mail_template_list.aspx.designer.cs">
       <DependentUpon>mail_template_list.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin\users\message_send.aspx.cs">
+    <Compile Include="uwill\users\message_send.aspx.cs">
       <DependentUpon>message_send.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\users\message_send.aspx.designer.cs">
+    <Compile Include="uwill\users\message_send.aspx.designer.cs">
       <DependentUpon>message_send.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin\users\message_list.aspx.cs">
+    <Compile Include="uwill\users\message_list.aspx.cs">
       <DependentUpon>message_list.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\users\message_list.aspx.designer.cs">
+    <Compile Include="uwill\users\message_list.aspx.designer.cs">
       <DependentUpon>message_list.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin\users\point_log.aspx.cs">
+    <Compile Include="uwill\users\point_log.aspx.cs">
       <DependentUpon>point_log.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\users\point_log.aspx.designer.cs">
+    <Compile Include="uwill\users\point_log.aspx.designer.cs">
       <DependentUpon>point_log.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin\users\user_config.aspx.cs">
+    <Compile Include="uwill\users\user_config.aspx.cs">
       <DependentUpon>user_config.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\users\user_config.aspx.designer.cs">
+    <Compile Include="uwill\users\user_config.aspx.designer.cs">
       <DependentUpon>user_config.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin\users\user_edit.aspx.cs">
+    <Compile Include="uwill\users\user_edit.aspx.cs">
       <DependentUpon>user_edit.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\users\user_edit.aspx.designer.cs">
+    <Compile Include="uwill\users\user_edit.aspx.designer.cs">
       <DependentUpon>user_edit.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin\users\user_list.aspx.cs">
+    <Compile Include="uwill\users\user_list.aspx.cs">
       <DependentUpon>user_list.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\users\user_list.aspx.designer.cs">
+    <Compile Include="uwill\users\user_list.aspx.designer.cs">
       <DependentUpon>user_list.aspx</DependentUpon>
     </Compile>
     <Compile Include="api\alipay\index.aspx.cs">

@@ -9,8 +9,8 @@ override protected void OnInit(EventArgs e)
 {
 
 	/* 
-		This page was created by DTcms Template Engine at 2012-12-6 17:09:34.
-		本页面代码由DTcms模板引擎生成于 2012-12-6 17:09:34. 
+		This page was created at 2013-2-1 21:18:29.
+		本页面代码生成于 2013-2-1 21:18:29. 
 	*/
 
 	base.OnInit(e);
@@ -187,7 +187,28 @@ override protected void OnInit(EventArgs e)
 
 	templateBuilder.Append("\r\n            </dd>\r\n          </dl>\r\n          <dl>\r\n            <dt>上架时间：</dt>\r\n            <dd>");
 	templateBuilder.Append(Utils.ObjectToStr(model.add_time));
-	templateBuilder.Append("</dd>\r\n          </dl>\r\n          <!--扩展属性开始-->\r\n          <!--/扩展属性结束-->\r\n        </div>\r\n        <div class=\"pro-btns\">\r\n		  <div class=\"input-box\">\r\n              购买数量：<input name=\"goods_id\" id=\"goods_id\" type=\"hidden\" value=\"");
+	templateBuilder.Append("</dd>\r\n          </dl>\r\n          <!--扩展属性开始-->\r\n          ");
+	if (model.attribute_values!=null)
+	{
+
+	int modelt__loop__id=0;
+	foreach(DTcms.Model.attribute_value modelt in model.attribute_values)
+	{
+		modelt__loop__id++;
+
+
+	templateBuilder.Append("\r\n          <dl>\r\n            <dt>");
+	templateBuilder.Append(Utils.ObjectToStr(modelt.title));
+	templateBuilder.Append("：</dt>\r\n            <dd>");
+	templateBuilder.Append(Utils.ObjectToStr(modelt.content));
+	templateBuilder.Append("</dd>\r\n          </dl>\r\n          ");
+	}	//end loop
+
+
+	}	//end if
+
+
+	templateBuilder.Append("\r\n          <!--扩展属性结束-->\r\n        </div>\r\n        <div class=\"pro-btns\">\r\n		  <div class=\"input-box\">\r\n              购买数量：<input name=\"goods_id\" id=\"goods_id\" type=\"hidden\" value=\"");
 	templateBuilder.Append(Utils.ObjectToStr(model.id));
 	templateBuilder.Append("\" /><input type=\"text\" name=\"goods_quantity\" id=\"goods_quantity\" value=\"1\" class=\"txt\" style=\"ime-mode:disabled\" />\r\n          </div>\r\n          <div class=\"btn-box\">\r\n            ");
 	if (model.stock_quantity>0)

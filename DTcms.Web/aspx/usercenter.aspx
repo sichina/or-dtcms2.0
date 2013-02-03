@@ -9,8 +9,8 @@ override protected void OnInit(EventArgs e)
 {
 
 	/* 
-		This page was created by DTcms Template Engine at 2012-12-6 17:09:34.
-		本页面代码由DTcms模板引擎生成于 2012-12-6 17:09:34. 
+		This page was created at 2013-2-1 21:18:29.
+		本页面代码生成于 2013-2-1 21:18:29. 
 	*/
 
 	base.OnInit(e);
@@ -155,7 +155,7 @@ override protected void OnInit(EventArgs e)
 
 	templateBuilder.Append("\r\n        <img src=\"");
 	templateBuilder.Append(Utils.ObjectToStr(config.templateskin));
-	templateBuilder.Append("images/user_avatar.png\" alt=\"求真像\" />\r\n        ");
+	templateBuilder.Append("/images/user_avatar.png\" alt=\"求真像\" />\r\n        ");
 	}	//end if
 
 
@@ -313,7 +313,7 @@ override protected void OnInit(EventArgs e)
 
 	templateBuilder.Append("\r\n        <img src=\"");
 	templateBuilder.Append(Utils.ObjectToStr(config.templateskin));
-	templateBuilder.Append("images/user_avatar.png\" width=\"180\" height=\"180\" />\r\n      ");
+	templateBuilder.Append("/images/user_avatar.png\" width=\"180\" height=\"180\" />\r\n      ");
 	}	//end if
 
 
