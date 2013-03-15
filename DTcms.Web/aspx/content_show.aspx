@@ -9,8 +9,8 @@ override protected void OnInit(EventArgs e)
 {
 
 	/* 
-		This page was created at 2013-2-1 21:18:29.
-		本页面代码生成于 2013-2-1 21:18:29. 
+		This page was created at 2013-3-6 16:40:46.
+		本页面代码生成于 2013-3-6 16:40:46. 
 	*/
 
 	base.OnInit(e);
@@ -121,7 +121,7 @@ override protected void OnInit(EventArgs e)
 	templateBuilder.Append("\">留言反馈</a></li>\r\n        <li><a href=\"");
 	templateBuilder.Append(linkurl("link"));
 
-	templateBuilder.Append("\">友情链接</a></li>\r\n      </ul>\r\n      <h3>客户服务</h3>\r\n      <div class=\"section\">\r\n        <p>电话：13800138000</p>\r\n        <p>在线QQ：400830000</p>\r\n        <p>E-mail：info@dtcms.net</p>\r\n        <p>新浪微博：http://weibo.com/dtcms</p>\r\n      </div>\r\n    </div>\r\n    <!--/Sidebar-->\r\n    \r\n  </div>\r\n</div>\r\n\r\n<div class=\"clear\"></div>\r\n\r\n<!--Footer-->\r\n");
+	templateBuilder.Append("\">友情链接</a></li>\r\n      </ul>\r\n      <h3>客户服务</h3>\r\n      <div class=\"section\">\r\n        <p>电话：13723707989</p>\r\n        <p>在线QQ：400830000</p>\r\n        <p>E-mail：info@dtcms.net</p>\r\n        <p>新浪微博：http://weibo.com/dtcms</p>\r\n      </div>\r\n    </div>\r\n    <!--/Sidebar-->\r\n    \r\n  </div>\r\n</div>\r\n\r\n<div class=\"clear\"></div>\r\n\r\n<!--Footer-->\r\n");
 
 	templateBuilder.Append("<div class=\"footer\">\r\n  <div class=\"footer_inner\">\r\n    <div class=\"foot_nav\">\r\n      <a target=\"_blank\" href=\"");
 	templateBuilder.Append(linkurl("index"));
