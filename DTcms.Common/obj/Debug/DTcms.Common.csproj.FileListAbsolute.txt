@@ -28,3 +28,8 @@ c:\Documents and Settings\Administrator\My Documents\GitHub\or-dtcms2.0\DTcms.Co
 c:\Documents and Settings\Administrator\My Documents\GitHub\or-dtcms2.0\DTcms.Common\obj\Debug\ResolveAssemblyReference.cache
 c:\Documents and Settings\Administrator\My Documents\GitHub\or-dtcms2.0\DTcms.Common\obj\Debug\DTcms.Common.dll
 c:\Documents and Settings\Administrator\My Documents\GitHub\or-dtcms2.0\DTcms.Common\obj\Debug\DTcms.Common.pdb
+D:\Backup\桌面\or-dtcms2.0\DTcms.Common\bin\Debug\DTcms.Common.dll
+D:\Backup\桌面\or-dtcms2.0\DTcms.Common\bin\Debug\DTcms.Common.pdb
+D:\Backup\桌面\or-dtcms2.0\DTcms.Common\obj\Debug\ResolveAssemblyReference.cache
+D:\Backup\桌面\or-dtcms2.0\DTcms.Common\obj\Debug\DTcms.Common.dll
+D:\Backup\桌面\or-dtcms2.0\DTcms.Common\obj\Debug\DTcms.Common.pdb

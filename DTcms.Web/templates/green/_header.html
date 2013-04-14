@@ -1,29 +1,36 @@
-﻿<div class="header">
-  <div class="header_inner">
-    <h1 class="logo">
-      <a title="{config.webname}" href="{config.weburl}">{config.webname}</a>
-    </h1>
-    <ul class="nav">
-      <li><a href="<%linkurl("index")%>">首页</a></li>
-      <li><a href="<%linkurl("news")%>">新闻资讯</a></li>
-      <li><a href="<%linkurl("goods")%>">购物商城</a></li>
-      <li><a href="<%linkurl("photo")%>">图片分享</a></li>
-      <li><a href="<%linkurl("down")%>">资源下载</a></li>
-    </ul>
-    <div class="search">
-      <input id="keywords" name="keywords" class="input" type="text" x-webkit-speech="" autofocus="" placeholder="输入回车搜索" onkeydown="if(event.keyCode==13){SiteSearch('{config.webpath}search.aspx', '#keywords');return false};" />
-      <input class="submit" type="submit" value="搜索" onclick="SiteSearch('{config.webpath}search.aspx', '#keywords');" />
-    </div>
-    <ul class="menu">
-      <li><a href="<%linkurl("content","contact")%>">联系我们</a></li>
-      <li><a href="<%linkurl("shopping","cart")%>">购物车<%write get_cart_quantity()%>件</a></li>
-      <%if IsUserLogin()%>
-      <li><a href="<%linkurl("usercenter","exit")%>">退出</a></li>
-      <li><a href="<%linkurl("usercenter","index")%>">会员中心</a></li>
-      <%else%>
-      <li><a href="<%linkurl("register")%>">注册</a></li>
-      <li><a href="<%linkurl("login")%>">登录</a></li>
-      <%/if%>
-    </ul>
-  </div>
-</div>
+﻿    <!--菜单-->
+        <div class="grid_12 indexmenu  mt10">
+            <div class="grid_3 logo alpha">
+            <a href="http://www.uwill.org.cn" target="_self" title="优为精英教育机构网站" ><img src="{config.templateskin}/images/logo.png" width="169" height="60" alt="优为精英教育网站LOGO" /></a></div>
+            <div class="grid_9 omega">
+                <div class="grid_7 alpha">
+                    <div class="grid_7 menu">
+                        <ul>
+                            <li><a href="#" target="_self" title="优为课程表"><div style=" background-image:url({config.templateskin}/images/dotdot_27.png); background-position:top left; background-repeat:no-repeat;" ><span id="menuspan">课程表</span></div></a></li>
+                            <li><a href="#" target="_self" title="关于优为">关于优为</a></li>
+                            <li><a href="#" target="_self" title="精彩活动">精彩活动</a></li>
+                            <li><a href="#" target="_self" title="会员服务">会员服务</a></li>
+                            <li><a href="#" target="_self" title="资料下载">资料下载</a></li>
+                        </ul>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="grid_7 submenu">
+                        <div class="subleft"></div>
+                        <div class="subcon">
+                            <ul>
+                                <li><a class="submenulink" href="#" title="全年龄段学习计划" target="_blank">全年龄段学习计划</a></li>
+                                <li><a class="submenulink" href="#" title="NLP亲子学堂" target="_blank">NLP亲子学堂</a></li>
+                                <li><a class="submenulink" href="#" title="国际夏冬令营" target="_blank">国际夏冬令营</a></li>
+                                <li><a class="submenulink" href="#" title="出国留学顾问" target="_blank">出国留学顾问</a></li>
+                            </ul>
+                        </div>
+                        <div class="subright"></div>
+                    </div>
+                </div>
+                <div class="grid_2 omega">
+                    <div class="mt8 listmenubg"><a  class="listmenu" href="javascript:window.external.AddFavorite('http://www.uwill.org.cn','优为精英教育机构-一切为了孩子，为了一切孩子，为了孩子一切')" title="">收藏网站</a></div>
+                    <div class="mt8 listmenubg"><a class="listmenu" href="" title="">设为首页</a></div>
+                </div>
+            </div>
+      </div>
+    <div class="clear"></div>

@@ -1,211 +1,217 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>{config.webtitle}</title>
 <meta content="{config.webkeyword}" name="keywords">
 <meta content="{config.webdescription}" name="description">
-<link media="screen" type="text/css" href="{config.templateskin}/css/style.css" rel="stylesheet">
-<script type="text/javascript" src="{config.webpath}scripts/jquery/jquery-1.3.2.min.js"></script>
-<script type="text/javascript" src="{config.webpath}scripts/jquery/jquery.KinSlideshow-1.2.1.min.js"></script>
+<link href="{config.templateskin}/css/uwill.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="{config.templateskin}/js/jquery.min.js"></script>
+<script type="text/javascript" src="{config.templateskin}/js/fisheye-iutil.min.js"></script>
+<script type="text/javascript" src="{config.templateskin}/js/jquery.jqDock.min.js"></script>
+<script type="text/javascript" src="{config.templateskin}/js/uwill.js"></script>
 <script type="text/javascript" src="{config.templateskin}/js/base.js"></script>
 <script type="text/javascript">
-$(function(){
-	$("#focusNews").KinSlideshow();
-})
+	$(function(){
+		var jqDockOpts = {align: 'center', duration: 200, labels: 'tc', size: 140, distance: 100};
+		$('#jqDock').jqDock(jqDockOpts);
+	});
+	$(document).ready(function() {
+	var myar = setInterval('AutoScroll("#scrollDiv")', 3000)
+	$("#scrollDiv").hover(function() { clearInterval(myar); }, function() { myar = setInterval('AutoScroll("#scrollDiv")', 3000) }); //当鼠标放上去的时候，滚动停止，鼠标离开的时候滚动开始
+    });
 </script>
+    <script language="javascript" type="text/javascript">
+        $(function () {
+            PicHover(".banner_title", ".banner_pic");
+        });
+    </script>
 </head>
 
 <body>
-<!--Header-->
-<%template src=/_header.html/%>
-<!--/Header-->
-
-<div class="boxwrap">
-  <div class="left710">
-    <div class="pad20">
-      <!--Focus-->
-      <div class="left300">
-        <div id="focusNews" class="ifocus">
-          <%set (DataTable){focusNews}=get_news_list(1, 0, 8, "is_lock=0 and is_slide=1")%>
-          <%loop newsdr focusNews%>
-          <a title="{newsdr[title]}" target="_blank" href="<%linkurl("news_show",{newsdr[id]})%>"><img src="{newsdr[img_url]}" alt="{newsdr[title]}" /></a>
-          <%/loop%>
+<div class="main">
+    <div class="container_12">
+	<%template src=/_header.html/%>
+    <!--主图-->
+    <div class="grid_12">
+        <div class="grid_9 alpha">
+        <img src="{config.templateskin}/images/mainpic_03.png" width="668" height="295" />
         </div>
-      </div>
-      <!--/Focus-->
-      <!--Top News-->
-      <div class="right350 icnts">
-        <%set (DataTable){topnews}=get_news_list(1, 0, 2, "is_lock=0 and is_top=1")%>
-        <%loop newsdr1 topnews%>
-        <%if newsdr1__loop__id==1%>
-        <h3 class="tit"><a title="{newsdr1[title]}" href="<%linkurl("news_show",{newsdr1[id]})%>">{newsdr1[title]}</a></h3>
-        <%/if%>
-        <%/loop%>
-        <ul class="list">
-          <%set (DataTable){rednews}=get_news_list(1, 0, 8, "is_lock=0 and is_red=1")%>
-          <%loop newsdr11 rednews%>
-          <%if newsdr11__loop__id<=4%>
-          <li>
-            <span>[<%write get_category_title({strtoint({newsdr11[category_id]})}, "")%>]</span>
-            <a href="<%linkurl("news_show",{newsdr11[id]})%>" title="{newsdr11[title]}">{newsdr11[title]}</a>
-          </li>
-          <%/if%>
-          <%/loop%>
-        </ul>
-        <%loop newsdr2 topnews%>
-        <%if newsdr2__loop__id==2%>
-        <h3 class="tit"><a href="<%linkurl("news_show",{newsdr2[id]})%>">{newsdr2[title]}</a></h3>
-        <%/if%>
-        <%/loop%>
-        <ul class="list last">
-          <%loop newsdr12 rednews%>
-          <%if newsdr12__loop__id>4%>
-          <li>
-            <span>[<%write get_category_title({strtoint({newsdr12[category_id]})}, "")%>]</span>
-            <a href="<%linkurl("news_show",{newsdr12[id]})%>" title="{newsdr12[title]}">{newsdr12[title]}</a>
-          </li>
-          <%/if%>
-          <%/loop%>
-        </ul>
-      </div>
-      <!--/Top News-->
-      <div class="clear"></div>
+        <div class="grid_3 omega">
+                <div id="dockContainer">
+                    <ul id="jqDock">
+                        <li><a class="dockItem" href="index.html"><img src="{config.templateskin}/images/ad_ico2_03.png" alt="Home" /></a></li>
+                        <li><a class="dockItem" href="example2.html"><img src="{config.templateskin}/images/ad_ico2_03.png" alt="Contact" /></a></li>
+                        <li><a class="dockItem" href="example3.html"><img src="{config.templateskin}/images/ad_ico2_03.png" alt="portfolio" /></a></li>
+                    </ul>
+                </div><!-- end div #dockContainer -->
+        </div>
+        <div class="clear"></div>
     </div>
-    <!--Hot Goods-->
+    <div class="grid_12">
+        <div class="grid_9 searchbg alpha">
+            <div id="scrollDiv">
+                <ul>
+                <%set (DataTable){uwillnews}=get_news_list(1, 33, 20,"is_lock=0","add_time desc")%>
+                <%loop newsdr uwillnews%>
+                	<li><a class="soroll" title="{newsdr[title]}" target="_blank" href="<%linkurl("news_show",{newsdr[id]})%>"><%cutstring({newsdr[content]},45)%></a></li>
+                <%/loop%>
+                </ul>
+            </div>
+        </div>
+    </div>
     <div class="clear"></div>
-    <div class="igoods_box">
-      <div class="igoods_list">
-        <dl class="head">
-          <dt>购物商城</dt>
-          <dd>
-            <ul class="sub_nav">
-              <%set (DataTable){category_list1}=get_category_child_list(2, 0)%>
-              <%loop cdr1 category_list1%>
-              <li class="n<%write cdr1__loop__id%>"><a href="<%linkurl("goods_list",{cdr1[id]})%>">{cdr1[title]}</a></li>
-              <%/loop%>
-            </ul>
-          </dd>
-        </dl>
+    <div class="grid_12 mt10">
+        <div class="grid_9 alpha">
+            <div class="grid_3 alpha">
+                <div><img src="{config.templateskin}/images/freeappoint.png" width="220" height="28" /></div>
+                <div>
+                <form action="freeappoint.aspx" method="post" name="sub_freeApp" target="_blank">
+                    <table class="tb_appoint" width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td>学员姓名：</td>
+                        <td><input class="inputstyle" name="a_name" type="text" maxlength="20" /></td>
+                      </tr>
+                      <!--<tr>
+                        <td>学院年龄：</td>
+                        <td><select name="a_age"><option>1</option></select></td>
+                      </tr>-->
+                      <tr>
+                        <td>联系手机：</td>
+                        <td><input class="inputstyle" name="a_phone" type="text" /></td>
+                      </tr>
+                        <tr>
+                        <td>验证码：</td>
+                        <td><input class="iptsmall" name="a_code" type="text" /><img src="../tools/verify_code.ashx" width="70" height="22" alt="点击切换验证码" title="点击切换验证码" style="margin-left:5px;vertical-align:top;cursor:pointer;" onclick="ToggleImgCode(this, '../tools/verify_code.ashx');return false;" /></td>
+                      </tr>
+                      <tr>
+                        <td colspan="2"><input type="image" src="{config.templateskin}/images/sub_button1.png" alt="免费预约试听课程" height="24px" width="122px" /><span class="f_right"><a class="redemp" href="<%linkurl("content","privacy")%>" title="客户联系方式隐私保护条款" target="_blank">*隐私保护条款</a></span></td>
+                      </tr>
+                    </table>
+                </form>
+                </div>
+            </div>
+            <div class="grid_6 omega">
+                <div class="subpic">
+                  <div id="banner">
+                    <div class="banner_title">
+                    <ul>
+                    <%set (DataTable){classlist}=get_news_list(1, 37, 5, "is_lock=0")%>
+                    <%loop classdr classlist%>
+                    <li><h1><a href="<%linkurl("news_show",{classdr[id]})%>" title="{classdr[title]}" target="_blank"  class="selected"><%cutstring({classdr[content]},15)%></a></h1></li>
+                    <%/loop%>
+                    </ul>
         
-        <ul class="list">
-          <%set (DataTable){redgoods}=get_goods_list(2, 0, 8, "is_lock=0 and is_red=1")%>
-          <%loop goodsdr1 redgoods%>
-          <li>
-            <a class="pic" href="<%linkurl("goods_show",{goodsdr1[id]})%>"><img src="{goodsdr1[img_url]}" alt="{goodsdr1[title]}" /></a>
-            <div class="info">
-              <a class="name" href="<%linkurl("goods_show",{goodsdr1[id]})%>">{goodsdr1[title]}</a>
-              <div class="price">
-                <span>价格：</span>
-                <strong>￥{goodsdr1[sell_price]}</strong>
-              </div>
+                    </div>
+                    <div class="banner_pic">
+                        
+                    <ul>
+                    <%set (DataTable) {classlist1}=get_news_list(1, 37, 5, "is_lock=0")%>
+                    <%loop classdr1 classlist1%>
+                    <li><a href="<%linkurl("news_show",{classdr1[id]})%>" title="{classdr1[title]}" target="_blank"><img src="{classdr1[img_url]}" alt="{classdr1[title]}" height="142" width="308"/></a></li>
+                    <%/loop%>
+                    </ul>
+            
+                    </div>
+                  </div>
+                </div>
             </div>
-          </li>
-          <%/loop%>
-        </ul>
-      </div>
-    </div>
-    <!--/Hot Goods-->
-  </div>
-  
-  <div class="left264">
-    <!--Red Download-->
-    <div class="idown_list">
-      <h3>推荐资源</h3>
-      <ul>
-        <%set (DataTable){reddown}=get_download_list(4, 0, 5, "is_red=1 and img_url<>''")%>
-        <%loop downdr reddown%>
-        <li><a href="<%linkurl("down_show",{downdr[id]})%>"> <img border="0" alt="{downdr[title]}" src="{downdr[img_url]}" /> </a> <a href="<%linkurl("down_show",{downdr[id]})%>">{downdr[title]}</a> <br />
-          <span class="date">更新：<%datetostr({downdr[add_time]},yyyy-MM-dd)%></span> <br />
-          <a class="down" href="<%linkurl("down_show",{downdr[id]})%>">下载</a>
-        </li>
-        <%/loop%>
-      </ul>
-    </div>
-    <!--/Red Download-->
-    <!--Hot Goods-->
-    <div class="isidebar">
-      <h3>热门商品</h3>
-      <div class="list">
-        <ol> 
-          <%set (DataTable){hotgoods}=get_goods_list(2, 0, 10, "is_lock=0 and is_hot=1", "click desc,id desc")%>
-          <%loop goodsdr2 hotgoods%>
-          <%if goodsdr2__loop__id==1%>
-          <li class="active" onmouseover="ToggleProps(this, 'active');">
-          <%else%>
-          <li onmousemove="ToggleProps(this, 'active');">
-          <%/if%>
-            <i class="num"><%write goodsdr2__loop__id%></i>
-            <div class="photo">
-              <a title="{goodsdr2[title]}" href="<%linkurl("goods_show",{goodsdr2[id]})%>"><img src="{goodsdr2[img_url]}" alt="{goodsdr2[title]}"></a>
+        </div>
+        <div class="grid_3 omega">
+            <div class="right_clum">
+                <div class="right_title"><img src="{config.templateskin}/images/contact_01.png" width="220" height="28" /></div>
+                <div class="t_contact"><img src="{config.templateskin}/images/contact_02.png" width="220" height="127" /></div>
             </div>
-            <div class="props">
-              <p class="name"><a title="{goodsdr2[title]}" href="<%linkurl("goods_show",{goodsdr2[id]})%>">{goodsdr2[title]}</a></p>
-              <p class="price">¥{goodsdr2[sell_price]}</p>
-              <p class="button"><a class="ibtn" href="<%linkurl("goods_show",{goodsdr2[id]})%>">立即购买</a></p>
-            </div>
-          </li>
-          <%/loop%>
-          </ol>
-      </div>
+        </div>
     </div>
-    <!--Hot Goods-->
-  </div>
-</div>
-
-<div class="clear"></div>
-<div class="boxwrap" style="border-top:0;">
-  <!--Red Photo-->
-  <div class="iphoto_list">
-    <dl class="head">
-      <dt>图片分享</dt>
-      <dd>
-        <ul class="sub_nav">
-          <%set (DataTable){category_list2}=get_category_child_list(3, 0)%>
-          <%loop cdr2 category_list2%>
-          <li class="n<%write cdr2__loop__id%>"><a href="<%linkurl("photo_list",{cdr2[id]})%>">{cdr2[title]}</a></li>
-          <%/loop%>
-        </ul>
-      </dd>
-    </dl>
     <div class="clear"></div>
-    <div class="list">
-      <ul>
-        <%set (DataTable){redphoto}=get_news_list(3, 0, 12, "is_lock=0 and is_red=1")%>
-        <%loop photodr1 redphoto%>
-        <li class="a<%write photodr1__loop__id%>">
-          <img src="{photodr1[img_url]}" alt="{photodr1[title]}" />
-          <a title="{photodr1[title]}" href="<%linkurl("photo_show",{photodr1[id]})%>"><strong>{photodr1[title]}</strong><br><span><%cutstring({photodr1[zhaiyao]},28)%></span><br>查看详情</a><i class="absbg"></i>
-        </li>
-        <%/loop%>
-      </ul>
-    </div>
-  </div>
-  <!--/Red Photo-->
-  <!--Links-->
-  <div class="ilink_list">
-    <h3><span class="graylink"><a href="<%linkurl("link","")%>">更多...</a></span>友情链接</h3>
-    <p class="txt">
-      <%set (DataTable){link_list1}=get_plugin_method("DTcms.Web.Plugin.Link", "link", "get_link_list", 0, "is_lock=0 and is_image=0 and is_red=1")%>
-      <%loop ldr1 link_list1%>
-      <a target="_blank" href="{ldr1[site_url]}">{ldr1[title]}</a> | 
-      <%/loop%>
-    </p>
-    <div class="img">
-      <ul>
-        <%set (DataTable){link_list2}=get_plugin_method("DTcms.Web.Plugin.Link", "link", "get_link_list", 9, "is_lock=0 and is_image=1 and is_red=1")%>
-        <%loop ldr2 link_list2%>
-        <li><a target="_blank" href="{ldr2[site_url]}" title="{ldr2[title]}"><img src="{ldr2[img_url]}" width="88" height="31" /></a></li>
-        <%/loop%>
-      </ul>
-      <div class="clear"></div>
-    </div>
-  </div>
-  <!--/Links-->
-</div>
+    <div class="grid_12 mt10">
+    	<div class="grid_9 alpha">
+        	<div class="grid_3 alpha">
+            	<div class="newtitlebg">
+                <h2>最新活动</h2>
+                </div>
+              <div class="newsindexlist">
+              <ul>
+              <%set (DataTable){hdlist}=get_news_list(1, 34, 7, "is_lock=0")%>
+              <%loop hddr hdlist%>
+                <li><a class="nl" href="<%linkurl("news_show",{hddr[id]})%>" title="{hddr[title]} target="_blank"><%cutstring({hddr[content]},26)%></a><span><%datetostr({hddr[add_time]},MM-dd)%></span> </li>
+              <%/loop%>
+              </ul>
+              </div>
+          </div>
+            <div class="grid_6 alpha">
+            	<div class="idxteacherbg"></div>
+                       <div class="rollBox">
+                    <div class="LeftBotton" onmousedown="ISL_GoUp()" onmouseout="ISL_StopUp()" onmouseup="ISL_StopUp()">
+                        &nbsp;</div>
+                    <div class="Cont" id="ISL_Cont">
+                        <div class="ScrCont">
+                            <div id="List1">
+                                <!-- 图片列表 begin -->
+                                <%set (DataTable){lslist}=get_news_list(1, 42, 20, "is_lock=0")%>
+                                <%loop lsdr lslist%>
+                                <div class="pic">
+                                    <img alt="{lsdr[title]}" onclick="" src="{lsdr[img_url]}" style="cursor: pointer;" title="{lsdr[title]}" /></div>                                
+                                <%/loop%>
+                                <!-- 图片列表 end --></div>
+                            <div id="List2">
+                                &nbsp;</div>
+                        </div>
+                    </div>
+                    <div class="RightBotton" onmousedown="ISL_GoDown()" onmouseout="ISL_StopDown()" onmouseup="ISL_StopDown()">
+                        &nbsp;</div>
+                </div>
+                <script language="javascript" type="text/javascript">
+					var Speed = 0.01; //速度(毫秒)
+					var Space = 20; //每次移动(px)
+					var PageWidth = 420; //翻页宽度
+					var fill = 0; //整体移位
+					var MoveLock = true;
+					var MoveTimeObj;
+					var Comp = 0;
+					var AutoPlayObj = null;
+					GetObj("List2").innerHTML = GetObj("List1").innerHTML;
+					GetObj('ISL_Cont').scrollLeft = fill;
+					GetObj("ISL_Cont").onmouseover = function(){
+						clearInterval(AutoPlayObj);
+						}
+					GetObj("ISL_Cont").onmouseout = function(){
+						AutoPlay();
+						}
+					AutoPlay(); 
+                </script>
+            </div>
+            <!--<div class="grid_3 alpha mt10"><img src="images/adv1.png" width="220" height="150" /></div>-->
+            <div class="grid_3 alpha mt10">
+            <%set (DataTable){xmxlist}=get_news_list(1, 43, 1,"is_lock=0")%>
+            <%loop xmxdr xmxlist%>
+            <img src="{xmxdr[img_url]}" alt="{xmxdr[title]}" width="220" height="189" />
+            <%/loop%>
+            </div>
+            <div class="grid_6 alpha mt10">
+                <div class="cctvstarbg"></div>
+                <div class="iphoto_list">
+                	    <div class="list">
+                          <ul>
+                            <%set (DataTable){hdphotolist}=get_news_list(3, 0, 6, "is_lock=0 and is_red=1")%>
+                            <%loop hdphotodr hdphotolist%>
+                            <li class="a<%write hdphotodr__loop__id%>">
+                              <img src="{hdphotodr[img_url]}" alt="{hdphotodr[title]}" />
+                              <a title="{hdphotodr[title]}" href="<%linkurl("photo_show",{hdphotodr[id]})%>">查看详情</a><i class="absbg"></i>
+                            </li>
+                            <%/loop%>
+                          </ul>
+                        </div>
 
-<!--Footer-->
-<%template src=/_footer.html/%>
-<!--/Footer-->
+                </div>
+          </div>
+        </div>
+        <%template src=/_weibosrc.html/%>
+    </div>
+    <div class="clear"></div>
+    </div><!-- end container_12 -->
+</div><!-- end Main -->
+     <%template src=/_footer.html/%>
 </body>
 </html>

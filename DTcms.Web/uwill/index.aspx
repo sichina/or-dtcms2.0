@@ -196,7 +196,7 @@
             </div>
             <%if (siteConfig.memberstatus == 1)
               { %>
-            <div title="会员管理" iconcss="menu-icon-member">
+<%--            <div title="会员管理" iconcss="menu-icon-member">
                 <ul class="nlist">
                     <%if (IsAdminLevel("users", DTEnums.ActionEnum.View.ToString()))
                       {%>
@@ -243,7 +243,7 @@
                     <li><a href="javascript:f_addTab('distribution','配送方式设置','orders/distribution_list.aspx')">配送方式设置</a></li>
                     <%} %>
                 </ul>
-            </div>
+            </div>--%>
             <%} %>
             <%if (IsAdminLevel("sys_plugin", DTEnums.ActionEnum.View.ToString()))
               { %>

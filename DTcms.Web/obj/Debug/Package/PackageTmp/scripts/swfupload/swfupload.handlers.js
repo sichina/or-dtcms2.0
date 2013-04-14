@@ -53,15 +53,15 @@ function uploadSuccess(file, serverData) {
         var progress = new FileProgress(file, this.customSettings.upload_target);
         var jsonstr = eval('(' + serverData + ')');
         if (jsonstr.msg == '0') {
-            progress.setStatus(jsonstr.msbox);
+            progress.setStatus(jsonstr.msgbox);
             progress.toggleCancel(false);
         }
         if (jsonstr.msg == '1') {
-            var imgArr = jsonstr.msbox.split(",");
+            var imgArr = jsonstr.msgbox.split(",");
             if (imgArr.length == 2) {
                 addImage(imgArr[0], imgArr[1]);
             } else {
-                addImage(jsonstr.msbox, jsonstr.msbox);
+                addImage(jsonstr.msgbox, jsonstr.msgbox);
             }
             progress.setStatus("缩略图创建成功.");
             progress.toggleCancel(false);
@@ -127,30 +127,32 @@ function show_remark(obj) {
     var m = $.ligerDialog.open({
         type: "",
         title: "图片描述",
-        content: '<textarea id="dialogRemark" style="font-size:12px;padding:3px;color:#000;border:1px #d2d2d2 solid;vertical-align:middle;width:300px;height:50px;">' + $(hidRemark).val() + '</textarea>',
+        content: '<textarea id="ImageRemark" style="font-size:12px;padding:3px;color:#000;border:1px #d2d2d2 solid;vertical-align:middle;width:300px;height:50px;">' + $(hidRemark).val() + '</textarea>',
         width: 350,
         buttons: [
-            { text: '批量描述', onclick: function () {
-                if ($(dialogRemark).val() == "") {
-                    $.ligerDialog.error('总该写点什么吧？');
-                    return false;
-                }
-                $("input[name='hide_photo_remark']").val($(dialogRemark).val());
-                $(".img_box").find(".remark i").html($(dialogRemark).val());
-                m.close();
+        { text: '批量描述', onclick: function () {
+            var remark = $('#ImageRemark').val();
+            if (remark == "") {
+                $.ligerDialog.error('总该写点什么吧？');
+                return false;
             }
-            },
-            { text: '单张描述', onclick: function () {
-                if ($(dialogRemark).val() == "") {
-                    $.ligerDialog.error('总该写点什么吧？');
-                    return false;
-                }
-                $(hidRemark).val($(dialogRemark).val());
-                $(obj).prevAll(".img_box").find(".remark i").html($(dialogRemark).val());
-                m.close();
+            $("input[name='hide_photo_remark']").val(remark);
+            $(".img_box").find(".remark i").html(remark);
+            m.close();
+        }
+        },
+        { text: '单张描述', onclick: function () {
+            var remark = $('#ImageRemark').val();
+            if (remark == "") {
+                $.ligerDialog.error('总该写点什么吧？');
+                return false;
             }
-            }
-         ],
+            $(hidRemark).val(remark);
+            $(obj).prevAll(".img_box").find(".remark i").html(remark);
+            m.close();
+        }
+        }
+        ],
         isResize: true
     });
 }

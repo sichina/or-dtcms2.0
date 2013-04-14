@@ -40,3 +40,10 @@ c:\Documents and Settings\Administrator\My Documents\GitHub\or-dtcms2.0\DTcms.DB
 c:\Documents and Settings\Administrator\My Documents\GitHub\or-dtcms2.0\DTcms.DBUtility\obj\Debug\ResolveAssemblyReference.cache
 c:\Documents and Settings\Administrator\My Documents\GitHub\or-dtcms2.0\DTcms.DBUtility\obj\Debug\DTcms.DBUtility.dll
 c:\Documents and Settings\Administrator\My Documents\GitHub\or-dtcms2.0\DTcms.DBUtility\obj\Debug\DTcms.DBUtility.pdb
+D:\Backup\桌面\or-dtcms2.0\DTcms.DBUtility\bin\Debug\DTcms.DBUtility.dll
+D:\Backup\桌面\or-dtcms2.0\DTcms.DBUtility\bin\Debug\DTcms.DBUtility.pdb
+D:\Backup\桌面\or-dtcms2.0\DTcms.DBUtility\bin\Debug\DTcms.Common.dll
+D:\Backup\桌面\or-dtcms2.0\DTcms.DBUtility\bin\Debug\DTcms.Common.pdb
+D:\Backup\桌面\or-dtcms2.0\DTcms.DBUtility\obj\Debug\ResolveAssemblyReference.cache
+D:\Backup\桌面\or-dtcms2.0\DTcms.DBUtility\obj\Debug\DTcms.DBUtility.dll
+D:\Backup\桌面\or-dtcms2.0\DTcms.DBUtility\obj\Debug\DTcms.DBUtility.pdb
