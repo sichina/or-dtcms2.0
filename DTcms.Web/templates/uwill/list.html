@@ -2,13 +2,15 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta property="qc:admins" content="15202442776571446727636" />
-<title>优为精英教育Sub01</title>
-<link href="css/uwill.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/fisheye-iutil.min.js"></script>
-<script type="text/javascript" src="js/jquery.jqDock.min.js"></script>
-<script type="text/javascript" src="js/uwill.js"></script>
+<%set (string){category_title}=get_category_title({model.category_id},"优为资讯")%>
+<title>{model.title} - {category_title} - {config.webname}</title>
+<meta content="{model.seo_keywords}" name="keywords">
+<meta content="{model.seo_description}" name="description">
+<link href="{config.templateskin}/css/uwill.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="{config.templateskin}/js/jquery.min.js"></script>
+<script type="text/javascript" src="{config.templateskin}/js/fisheye-iutil.min.js"></script>
+<script type="text/javascript" src="{config.templateskin}/js/jquery.jqDock.min.js"></script>
+<script type="text/javascript" src="{config.templateskin}/js/uwill.js"></script>
 </head>
 
 <body>
@@ -16,42 +18,48 @@
     <div class="container_12">
 	<%template src=/_header.html/%>
     <!--主图-->
-      <div class="grid_12"><img src="images/sub_bg.png" width="940" height="236" /></div>
+      <div class="grid_12"><img src="{config.templateskin}/images/sub_bg.png" width="940" height="236" /></div>
       <div class="clear"></div>
       <div class="grid_12 subtop">
       	<div class="grid_3 fix_ml10 alpha">
-        	<div class="left_tit_top">
+       	<div class="left_tit_top">
             	<div class="sologon"><span>优为精英教育</span></div>
                 <div class="clear" ></div>
-            	<div class="cat"><span>关于我们</span></div>
+            	<div class="cat"><span>{channel.title}</span></div>
             </div>
             <div class="left_tit_content">
             	<ul>
-                	<li><a href="#">子菜单1</a></li>
-                    <li><a href="#" class="select">子菜单2</a></li>
-                    <li><a href="#">稍微长一点的比较长的子菜单2</a></li>
+                    <%set (DataTable){category_list1}=get_category_child_list(channel_id, 0)%>
+       				<%loop cdr1 category_list1%>
+                    <%if {strtoint({cdr1[id]})}=={model.category_id}%>
+                    <li><a class="select" href="<%linkurl("news_list",{cdr1[id]})%>">{cdr1[title]}</a></li>
+                    <%else%>
+                    <li><a href="<%linkurl("news_list",{cdr1[id]})%>">{cdr1[title]}</a></li>
+                    <%/if%>
+                    <%/loop%>
                 </ul>
             </div>
             <div class="left_tit_bottom"></div>
             <div class="clear"></div>
             <div class="left_contact">
-            <img src="images/left_contact_01.png" width="190" height="16" /><br />
-            <img src="images/left_contact_02.png" width="190" height="102" /></div>
+            <img src="{config.templateskin}/images/left_contact_01.png" width="190" height="16" /><br />
+            <img src="{config.templateskin}/images/left_contact_02.png" width="190" height="102" /></div>
           <div class="left_contact">
-       	  <img src="images/left_contact_adr_01.png" width="190" height="16" /><br />
-          <a href="http://j.map.baidu.com/vfp6K" title="优为精英教育机构报名地址：衡阳市雁峰区蒸阳南路崇业写字楼7楼702" target="_blank"><img src="images/baidu_adr.png" width="190" height="118" alt="优为学校地址" /></a>
+       	  <img src="{config.templateskin}/images/left_contact_adr_01.png" width="190" height="16" /><br />
+          <a href="http://j.map.baidu.com/vfp6K" title="优为精英教育机构报名地址：衡阳市雁峰区蒸阳南路崇业写字楼7楼702" target="_blank"><img src="{config.templateskin}/images/baidu_adr.png" width="190" height="118" alt="优为学校地址" /></a>
           </div>
         </div>
         <div class="grid_9 fix_ml10 omega">
         	<div class="sub_content">
             	<div class="side">
-                	<a href="#">　首页</a> &gt;
-    <a href="huiyuanfuwu.aspx" >会员服务</a> &gt; <a href="huiyuanruhuizhiyin.aspx" >入会指引</a> &gt; <a href="ruhuiliucheng.aspx" >入会流程</a>
+                <%set (string){sub_menu}=get_category_menu("news",{model.category_id})%>
+                
+                	<a href="/">　首页</a>{sub_menu}
                 </div>
                 <div class="clear"></div>
                 <div class="bigtitle">
-                	<h1>关于我们</h1>
-                    <h2>关于我们简介关于我们简介关于我们简介关于我们简介关于我们简介关于我们简介</h2>
+                	<h1>{model.title}</h1>
+                    <h2>{model.zhaiyao}</h2>
                 </div>
                 <div class="clear"></div>
                 <div class="art_list">

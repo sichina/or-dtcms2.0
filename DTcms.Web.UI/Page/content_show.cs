@@ -11,6 +11,7 @@ namespace DTcms.Web.UI.Page
         protected int id;
         protected string page = string.Empty;
         protected Model.article_content model = new Model.article_content();
+        protected Model.sys_channel channel = new Model.sys_channel();
 
         /// <summary>
         /// 重写虚方法,此方法将在Init事件前执行
@@ -20,6 +21,7 @@ namespace DTcms.Web.UI.Page
             id = DTRequest.GetQueryInt("id");
             page = DTRequest.GetQueryString("page");
             BLL.article bll = new BLL.article();
+            BLL.sys_channel bll_channel = new BLL.sys_channel();
             if (id > 0)
             {
                 if (!bll.Exists(id))
@@ -52,6 +54,7 @@ namespace DTcms.Web.UI.Page
             {
                 HttpContext.Current.Response.Redirect(model.link_url);
             }
+            channel = bll_channel.GetModel(model.channel_id);
         }
     }
 }

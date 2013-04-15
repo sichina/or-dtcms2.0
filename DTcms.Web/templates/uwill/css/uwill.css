@@ -263,7 +263,7 @@ a.footera:acitve{font-family:"微软雅黑", "宋体";font-size:12px;color:#FFFF
 .bigtitle h1{font-size:26px;color:#092947;font-family:"微软雅黑", "宋体";}
 .bigtitle h2{font-size:12px;color:#7e8a93;font-family:"微软雅黑", "宋体";padding:2px;}
 .context{margin-top:15px;width:700px; overflow:hidden; background-image:url(../images/context_bg_26.png); background-position:top left; background-repeat:repeat-x;}
-.context p{font-size:12px;color:#929292;font-family:"微软雅黑", "宋体";padding-top:10px;line-height:24px;}
+.context .con_text{font-size:14px;color:#929292;font-family:"微软雅黑", "宋体";padding-top:10px;line-height:24px;height:350px;min-height:350px;_height:350px;}
 .context .con_date{line-height:20px; border-bottom:#ccc 1px dotted;text-align:right;color:#7d95a8;}
 .h20{height:20px; font-size:20px; border-top:#ccc 1px dotted;}
 .art_list{width:700px; overflow:hidden;margin-top:30px; border-top:#ccc 1px dotted;margin-bottom:50px;}
