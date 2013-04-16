@@ -9,8 +9,8 @@ override protected void OnInit(EventArgs e)
 {
 
 	/* 
-		This page was created at 2013-4-15 15:39:27.
-		本页面代码生成于 2013-4-15 15:39:27. 
+		This page was created at 2013-4-16 15:44:18.
+		本页面代码生成于 2013-4-16 15:44:18. 
 	*/
 
 	base.OnInit(e);
@@ -18,7 +18,7 @@ override protected void OnInit(EventArgs e)
 	const int channel_id = 1;
 
 	templateBuilder.Append("<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\r\n");
-	string category_title = get_category_title(model.category_id,"新闻资讯");
+	string category_title = get_category_title(model.category_id,"优为资讯");
 	
 
 	templateBuilder.Append("\r\n<title>");

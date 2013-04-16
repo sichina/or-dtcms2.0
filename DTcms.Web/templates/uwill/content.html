@@ -52,17 +52,17 @@
         <div class="grid_9 fix_ml10 omega">
         	<div class="sub_content">
             	<div class="side">
-                <%set (string){sub_menu}=get_category_menu("news",{model.category_id})%>
+                <%set (string){sub_menu}=get_category_menu("content",{model.category_id})%>
                 
                 	<a href="/">　首页</a>{sub_menu}
                 </div>
                 <div class="clear"></div>
                 <div class="bigtitle">
                 	<h1>{model.title}</h1>
-                    <h2>{model.zhaiyao}</h2>
+                    <h2>{model.seo_description}</h2>
                 </div>
                 <div class="context">
-                	<div class="con_date">作者：{model.author} 发布时间：{model.add_time} 浏览次数：{model.click}</div>
+                	<div class="con_date">发布时间：{model.add_time} 浏览次数：{model.click}</div>
                     <div class="con_text">
                     {model.content}
                     </div>

@@ -9,8 +9,8 @@ override protected void OnInit(EventArgs e)
 {
 
 	/* 
-		This page was created at 2013-4-15 15:39:27.
-		本页面代码生成于 2013-4-15 15:39:27. 
+		This page was created at 2013-4-16 15:44:18.
+		本页面代码生成于 2013-4-16 15:44:18. 
 	*/
 
 	base.OnInit(e);
@@ -134,33 +134,6 @@ override protected void OnInit(EventArgs e)
 
 	templateBuilder.Append("\r\n        </ul>\r\n      </div>\r\n      <!--/附件列表-->\r\n      \r\n      <div class=\"line10\"></div>\r\n      <!--顶踩-->\r\n      ");
 
-	templateBuilder.Append("  <div class=\"newdigg\" id=\"newdigg\">\r\n    <div id=\"digg_good\" class=\"diggbox digg_good\">\r\n      <div class=\"digg_act\">顶一下</div>\r\n      <div class=\"digg_num\">(");
-	templateBuilder.Append(Utils.ObjectToStr(model.digg_good));
-	templateBuilder.Append(")</div>\r\n      <div class=\"digg_percent\">\r\n        ");
-	        decimal good_num = 0;
-	        if(model.digg_good>0){
-	          good_num = decimal.Round((decimal)model.digg_good/(model.digg_good + model.digg_bad)*100,1);
-	        }
-	        
-
-	templateBuilder.Append("\r\n        <div class=\"digg_percent_bar\"><span style=\"width:");
-	templateBuilder.Append(Utils.ObjectToStr(good_num));
-	templateBuilder.Append("%\"></span></div>\r\n        <div class=\"digg_percent_num\">");
-	templateBuilder.Append(Utils.ObjectToStr(good_num));
-	templateBuilder.Append("%</div>\r\n      </div>\r\n    </div>\r\n    <div id=\"digg_bad\" class=\"diggbox digg_bad\">\r\n      <div class=\"digg_act\">踩一下</div>\r\n      <div class=\"digg_num\">(");
-	templateBuilder.Append(Utils.ObjectToStr(model.digg_bad));
-	templateBuilder.Append(")</div>\r\n      <div class=\"digg_percent\">\r\n        ");
-	        decimal bad_num = 0;
-	        if(model.digg_bad>0){
-	          bad_num = decimal.Round((decimal)model.digg_bad/(model.digg_good + model.digg_bad)*100,1);
-	        }
-	        
-
-	templateBuilder.Append("\r\n        <div class=\"digg_percent_bar\"><span style=\"width:");
-	templateBuilder.Append(Utils.ObjectToStr(bad_num));
-	templateBuilder.Append("%\"></span></div>\r\n        <div class=\"digg_percent_num\">");
-	templateBuilder.Append(Utils.ObjectToStr(bad_num));
-	templateBuilder.Append("%</div>\r\n      </div>\r\n    </div>\r\n  </div>");
 
 
 	templateBuilder.Append("\r\n      <!--/项踩-->\r\n      \r\n      <!--同类推荐-->\r\n      <div class=\"related\">\r\n        <h3 class=\"base_tit\">相关资源</h3>\r\n        <ul class=\"txt_list\">\r\n          ");

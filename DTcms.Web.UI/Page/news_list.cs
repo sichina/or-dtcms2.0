@@ -10,6 +10,7 @@ namespace DTcms.Web.UI.Page
         protected int page;         //当前页码
         protected int category_id;  //类别ID
         protected int totalcount;   //OUT数据总数
+        protected Model.sys_channel channel = new Model.sys_channel();
         /// <summary>
         /// 重写虚方法,此方法将在Init事件前执行
         /// </summary>
@@ -17,6 +18,12 @@ namespace DTcms.Web.UI.Page
         {
             page = DTRequest.GetQueryInt("page", 1);
             category_id = DTRequest.GetQueryInt("category_id");
+            channel = get_channel_by_catagoryid(category_id);
+            if (null==channel)
+            {
+                channel = get_channel_by_channelid(1);
+            }
+
         }
     }
 }

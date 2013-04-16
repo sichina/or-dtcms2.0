@@ -29,6 +29,19 @@ namespace DTcms.BLL
             return dal.GetTitle(id);
         }
         /// <summary>
+        /// 返回频道模型
+        /// </summary>
+        public Model.sys_channel GetChannelModel(int id)
+        {
+            sys_channel bll = new sys_channel();
+            int chanid = Convert.ToInt32(dal.GetChannelModel(id));
+            if (!bll.Exists(chanid))
+            {
+                return null;
+            }
+            return bll.GetModel(chanid);
+        }
+        /// <summary>
         /// 增加一条数据
         /// </summary>
         public int Add(DTcms.Model.category model)

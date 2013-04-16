@@ -63,6 +63,9 @@
     <Compile Include="Label\article_comment.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="Label\sys_channel.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="Label\users.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>

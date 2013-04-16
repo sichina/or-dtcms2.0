@@ -45,6 +45,22 @@ namespace DTcms.DAL
         }
 
         /// <summary>
+        /// 返回频道id
+        /// </summary>
+        public string GetChannelModel(int id)
+        {
+            StringBuilder strSql = new StringBuilder();
+            strSql.Append("select top 1 channel_id from dt_category");
+            strSql.Append(" where id=" + id);
+            string chanid = Convert.ToString(DbHelperSQL.GetSingle(strSql.ToString()));
+            if (string.IsNullOrEmpty(chanid))
+            {
+                return "";
+            }
+            return chanid;
+        }
+
+        /// <summary>
         /// 增加一条数据
         /// </summary>
         public int Add(Model.category model)

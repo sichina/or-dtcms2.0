@@ -548,9 +548,6 @@
     <Content Include="templates\uwill\down_list.html" />
     <Content Include="templates\uwill\down_show.html" />
     <Content Include="templates\uwill\error.html" />
-    <Content Include="templates\uwill\goods.html" />
-    <Content Include="templates\uwill\goods_list.html" />
-    <Content Include="templates\uwill\goods_show.html" />
     <Content Include="templates\uwill\images\big_next.png" />
     <Content Include="templates\uwill\images\big_prev.png" />
     <Content Include="templates\uwill\images\body_bg.gif" />
@@ -586,32 +583,18 @@
     <Content Include="templates\uwill\js\picture.js" />
     <Content Include="templates\uwill\js\register_validate.js" />
     <Content Include="templates\uwill\js\slide.js" />
-    <Content Include="templates\uwill\login.html" />
     <Content Include="templates\uwill\news.html" />
     <Content Include="templates\uwill\news_list.html" />
     <Content Include="templates\uwill\news_show.html" />
-    <Content Include="templates\uwill\payment.html" />
     <Content Include="templates\uwill\photo.html" />
     <Content Include="templates\uwill\photo_list.html" />
     <Content Include="templates\uwill\photo_show.html" />
-    <Content Include="templates\uwill\register.html" />
-    <Content Include="templates\uwill\repassword.html" />
     <Content Include="templates\uwill\search.html" />
-    <Content Include="templates\uwill\shopping.html" />
-    <Content Include="templates\uwill\useramount.html" />
-    <Content Include="templates\uwill\usercenter.html" />
-    <Content Include="templates\uwill\usermessage.html" />
-    <Content Include="templates\uwill\usermessage_show.html" />
-    <Content Include="templates\uwill\userorder.html" />
-    <Content Include="templates\uwill\userorder_show.html" />
-    <Content Include="templates\uwill\userpoint.html" />
     <Content Include="templates\uwill\_comment_box.html" />
-    <Content Include="templates\uwill\_digg_box.html" />
     <Content Include="templates\uwill\_footer.html" />
     <Content Include="templates\uwill\_header.html" />
     <Content Include="templates\uwill\_share2_js.html" />
     <Content Include="templates\uwill\_share_js.html" />
-    <Content Include="templates\uwill\_ucenter_nav.html" />
     <Content Include="watermark.png" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -1077,7 +1060,9 @@
     <Content Include="tools\upload_ajax.ashx" />
     <Content Include="tools\verify_code.ashx" />
     <Content Include="xmlconfig\site.config" />
-    <Content Include="xmlconfig\urls.config" />
+    <Content Include="xmlconfig\urls.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="xmlconfig\user.config" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
