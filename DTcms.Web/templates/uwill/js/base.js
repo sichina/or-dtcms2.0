@@ -40,11 +40,6 @@ function ToggleCode(obj, codeurl) {
     $(obj).children("img").eq(0).attr("src", codeurl + "?time=" + Math.random());
 	return false;
 }
-/*切换验证码*/
-function ToggleImgCode(obj, codeurl) {
-    $(obj).eq(0).attr("src", codeurl + "?time=" + Math.random());
-	return false;
-}
 //复制文本
 function copyText(txt){
 	window.clipboardData.setData("Text",txt); 

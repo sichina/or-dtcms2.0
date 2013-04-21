@@ -32,9 +32,9 @@
                     <%set (DataTable){category_list1}=get_category_child_list(channel_id, 0)%>
        				<%loop cdr1 category_list1%>
                     <%if {strtoint({cdr1[id]})}=={model.category_id}%>
-                    <li><a class="select" href="<%linkurl("news_list",{cdr1[id]})%>">{cdr1[title]}</a></li>
+                    <li><a class="select" href="<%linkurl("content_list",{cdr1[id]})%>">{cdr1[title]}</a></li>
                     <%else%>
-                    <li><a href="<%linkurl("news_list",{cdr1[id]})%>">{cdr1[title]}</a></li>
+                    <li><a href="<%linkurl("content_list",{cdr1[id]})%>">{cdr1[title]}</a></li>
                     <%/if%>
                     <%/loop%>
                 </ul>
@@ -52,7 +52,7 @@
         <div class="grid_9 fix_ml10 omega">
         	<div class="sub_content">
             	<div class="side">
-                <%set (string){sub_menu}=get_category_menu("content",{model.category_id})%>
+                <%set (string){sub_menu}=get_category_menu("content_list",{model.category_id})%>
                 
                 	<a href="/">　首页</a>{sub_menu}
                 </div>

@@ -152,7 +152,7 @@
                                 <%set (DataTable){lslist}=get_news_list(1, 42, 20, "is_lock=0")%>
                                 <%loop lsdr lslist%>
                                 <div class="pic">
-                                    <img alt="{lsdr[title]}" onclick="" src="{lsdr[img_url]}" style="cursor: pointer;" title="{lsdr[title]}" /></div>                                
+                                   <img alt="{lsdr[title]}" onclick="window.open('<%linkurl("news_show",{lsdr[id]})%>');" src="{lsdr[img_url]}" style="cursor: pointer;" title="{lsdr[title]}" /></div>                                
                                 <%/loop%>
                                 <!-- 图片列表 end --></div>
                             <div id="List2">

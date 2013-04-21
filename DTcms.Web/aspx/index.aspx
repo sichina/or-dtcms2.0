@@ -9,8 +9,8 @@ override protected void OnInit(EventArgs e)
 {
 
 	/* 
-		This page was created at 2013-4-16 15:44:18.
-		本页面代码生成于 2013-4-16 15:44:18. 
+		This page was created at 2013-4-20 22:21:05.
+		本页面代码生成于 2013-4-20 22:21:05. 
 	*/
 
 	base.OnInit(e);
@@ -43,7 +43,8 @@ override protected void OnInit(EventArgs e)
 	templateBuilder.Append("script>\r\n    <script language=\"javascript\" type=\"text/javascript\">\r\n        $(function () {\r\n            PicHover(\".banner_title\", \".banner_pic\");\r\n        });\r\n    </");
 	templateBuilder.Append("script>\r\n</head>\r\n\r\n<body>\r\n<div class=\"main\">\r\n    <div class=\"container_12\">\r\n	");
 
-	templateBuilder.Append("    <!--菜单-->\r\n        <div class=\"grid_12 indexmenu  mt10\">\r\n            <div class=\"grid_3 logo alpha\">\r\n            <a href=\"http://www.uwill.org.cn\" target=\"_self\" title=\"优为精英教育机构网站\" ><img src=\"");
+	templateBuilder.Append("    <!--[if lte IE 6]> \r\n    <div id=\"ie6-warning\">您正在使用 Internet Explorer 6，在本页面的显示效果可能有差异。建议您升级到 <a href=\"http://www.microsoft.com/china/windows/internet-explorer/\" target=\"_blank\">Internet Explorer 8</a> 或以下浏览器： <a href=\"http://www.mozillaonline.com/\">Firefox</a> / <a href=\"http://www.google.com/chrome/?hl=zh-CN\">Chrome</a> / <a href=\"http://www.apple.com.cn/safari/\">Safari</a> / <a href=\"http://www.operachina.com/\">Opera</a> \r\n    </div> \r\n    <script type=\"text/javascript\"> \r\n    function position_fixed(el, eltop, elleft){ \r\n    // check if this is IE6 \r\n    if(!window.XMLHttpRequest) \r\n    window.onscroll = function(){ \r\n    el.style.top = (document.documentElement.scrollTop + eltop)+\"px\"; \r\n    el.style.left = (document.documentElement.scrollLeft + elleft)+\"px\"; \r\n    } \r\n    else el.style.position = \"fixed\"; \r\n    } \r\n    position_fixed(document.getElementById(\"ie6-warning\"),0, 0); \r\n    </");
+	templateBuilder.Append("script> \r\n    <![endif]--> \r\n    <!--菜单-->\r\n        <div class=\"grid_12 indexmenu  mt10\">\r\n            <div class=\"grid_3 logo alpha\">\r\n            <a href=\"http://www.uwill.org.cn\" target=\"_self\" title=\"优为精英教育机构网站\" ><img src=\"");
 	templateBuilder.Append(Utils.ObjectToStr(config.templateskin));
 	templateBuilder.Append("/images/logo.png\" width=\"169\" height=\"60\" alt=\"优为精英教育网站LOGO\" /></a></div>\r\n            <div class=\"grid_9 omega\">\r\n                <div class=\"grid_7 alpha\">\r\n                    <div class=\"grid_7 menu\">\r\n                        <ul>\r\n                            <li><a href=\"#\" target=\"_self\" title=\"优为课程表\"><div style=\" background-image:url(");
 	templateBuilder.Append(Utils.ObjectToStr(config.templateskin));
@@ -158,7 +159,10 @@ override protected void OnInit(EventArgs e)
 		lsdr__loop__id++;
 
 
-	templateBuilder.Append("\r\n                                <div class=\"pic\">\r\n                                    <img alt=\"" + Utils.ObjectToStr(lsdr["title"]) + "\" onclick=\"\" src=\"" + Utils.ObjectToStr(lsdr["img_url"]) + "\" style=\"cursor: pointer;\" title=\"" + Utils.ObjectToStr(lsdr["title"]) + "\" /></div>                                \r\n                                ");
+	templateBuilder.Append("\r\n                                <div class=\"pic\">\r\n                                   <img alt=\"" + Utils.ObjectToStr(lsdr["title"]) + "\" onclick=\"window.open('");
+	templateBuilder.Append(linkurl("news_show",Utils.ObjectToStr(lsdr["id"])));
+
+	templateBuilder.Append("');\" src=\"" + Utils.ObjectToStr(lsdr["img_url"]) + "\" style=\"cursor: pointer;\" title=\"" + Utils.ObjectToStr(lsdr["title"]) + "\" /></div>                                \r\n                                ");
 	}	//end loop
 
 
@@ -200,7 +204,7 @@ override protected void OnInit(EventArgs e)
 
 	templateBuilder.Append("\r\n                          </ul>\r\n                        </div>\r\n\r\n                </div>\r\n          </div>\r\n        </div>\r\n        ");
 
-	templateBuilder.Append("        <!--微博秀-->\r\n        <div class=\"grid_3 omega\">\r\n            <iframe width=\"220\" height=\"417\" class=\"share_self\"  frameborder=\"0\" scrolling=\"no\" src=\"http://widget.weibo.com/weiboshow/index.php?language=&width=220&height=417&fansRow=1&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=1&isFans=0&uid=1406608827&verifier=2b0f09b7&dpc=1\"></iframe>\r\n        </div>\r\n        <!--微博秀结束-->");
+	templateBuilder.Append("        <!--微博秀-->\r\n        <div class=\"grid_3 omega\">\r\n            <iframe width=\"220\" height=\"423\" class=\"share_self\"  frameborder=\"0\" scrolling=\"no\" src=\"http://widget.weibo.com/weiboshow/index.php?language=&width=220&height=423&fansRow=1&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=1&isFans=0&uid=2822010973&verifier=0da53904&dpc=1\"></iframe>\r\n        </div>\r\n        <!--微博秀结束-->");
 
 
 	templateBuilder.Append("\r\n    </div>\r\n    <div class=\"clear\"></div>\r\n    </div><!-- end container_12 -->\r\n</div><!-- end Main -->\r\n     ");

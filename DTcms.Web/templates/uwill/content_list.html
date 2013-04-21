@@ -2,9 +2,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<%set (string){category_title}=get_category_title({category_id},"优为资讯")%>
+<%set (string){category_title}=get_category_title({category_id},"优为教育")%>
 <title>{category_title} - {config.webname}</title>
 <link href="{config.templateskin}/css/uwill.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="{config.webpath}css/pagination.css" />
 <script type="text/javascript" src="{config.templateskin}/js/jquery.min.js"></script>
 <script type="text/javascript" src="{config.templateskin}/js/fisheye-iutil.min.js"></script>
 <script type="text/javascript" src="{config.templateskin}/js/jquery.jqDock.min.js"></script>
@@ -30,9 +31,9 @@
                     <%set (DataTable){category_list1}=get_category_child_list(channel_id, 0)%>
        				<%loop cdr1 category_list1%>
                     <%if {strtoint({cdr1[id]})}=={category_id}%>
-                    <li><a class="select" href="<%linkurl("news_list",{cdr1[id]})%>">{cdr1[title]}</a></li>
+                    <li><a class="select" href="<%linkurl("content_list",{cdr1[id]})%>">{cdr1[title]}</a></li>
                     <%else%>
-                    <li><a href="<%linkurl("news_list",{cdr1[id]})%>">{cdr1[title]}</a></li>
+                    <li><a href="<%linkurl("content_list",{cdr1[id]})%>">{cdr1[title]}</a></li>
                     <%/if%>
                     <%/loop%>
                 </ul>
@@ -50,7 +51,7 @@
         <div class="grid_9 fix_ml10 omega">
         	<div class="sub_content">
             	<div class="side">
-                <%set (string){sub_menu}=get_category_menu("news",{category_id})%>
+                <%set (string){sub_menu}=get_category_menu("content_list",{category_id})%>
                 
                 	<a href="/">　首页</a>{sub_menu}
                 </div>
@@ -62,17 +63,17 @@
                 <div class="clear"></div>
                 <div class="art_list">
                 	<ul>
-                      <%set (DataTable){news_list}=get_news_list(channel_id, category_id, 10, page, "", out totalcount)%> <!--取得一个DataTable-->
+                      <%set (DataTable){news_list}=get_content_list(channel_id, category_id, 10, page, "", out totalcount)%> <!--取得一个DataTable-->
                       <%set (string){pagelist}=get_page_link(10, page, totalcount, "news_list1", category_id, "__id__")%> <!--取得分页页码列表-->
                       <%loop listdr news_list%>
                       <li>
-                        <a href="<%linkurl("news_show",{listdr[id]})%>" title="note">{listdr[title]}</a><span><%datetostr({listdr[add_time]},yyyy-MM-dd)%></span>
+                        <a href="<%linkurl("content",{listdr[call_index]})%>" title="{listdr[title]}">{listdr[title]}</a><span><%datetostr({listdr[add_time]},yyyy-MM-dd)%></span>
                       </li>
                       <%/loop%>
                     </ul>
                 </div>
-                <div class="flickr">{pagelist}</div> <!--放置页码列表-->
             </div>
+            <div class="flickr">{pagelist}</div> <!--放置页码列表-->
         </div>
         <div class="clear"></div>
       </div> 

@@ -1,4 +1,20 @@
-﻿    <!--菜单-->
+﻿    <!--[if lte IE 6]> 
+    <div id="ie6-warning">您正在使用 Internet Explorer 6，在本页面的显示效果可能有差异。建议您升级到 <a href="http://www.microsoft.com/china/windows/internet-explorer/" target="_blank">Internet Explorer 8</a> 或以下浏览器： <a href="http://www.mozillaonline.com/">Firefox</a> / <a href="http://www.google.com/chrome/?hl=zh-CN">Chrome</a> / <a href="http://www.apple.com.cn/safari/">Safari</a> / <a href="http://www.operachina.com/">Opera</a> 
+    </div> 
+    <script type="text/javascript"> 
+    function position_fixed(el, eltop, elleft){ 
+    // check if this is IE6 
+    if(!window.XMLHttpRequest) 
+    window.onscroll = function(){ 
+    el.style.top = (document.documentElement.scrollTop + eltop)+"px"; 
+    el.style.left = (document.documentElement.scrollLeft + elleft)+"px"; 
+    } 
+    else el.style.position = "fixed"; 
+    } 
+    position_fixed(document.getElementById("ie6-warning"),0, 0); 
+    </script> 
+    <![endif]--> 
+    <!--菜单-->
         <div class="grid_12 indexmenu  mt10">
             <div class="grid_3 logo alpha">
             <a href="http://www.uwill.org.cn" target="_self" title="优为精英教育机构网站" ><img src="{config.templateskin}/images/logo.png" width="169" height="60" alt="优为精英教育网站LOGO" /></a></div>
